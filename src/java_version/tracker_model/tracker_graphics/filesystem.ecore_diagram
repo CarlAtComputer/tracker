@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_Je4pILfxEd6ALNhtX3qnow" type="Ecore" name="filesystem.ecore_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_OlqVsLfxEd6ALNhtX3qnow" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OlqVsrfxEd6ALNhtX3qnow" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVs7fxEd6ALNhtX3qnow" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVtLfxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVtbfxEd6ALNhtX3qnow"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVtrfxEd6ALNhtX3qnow" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVt7fxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVuLfxEd6ALNhtX3qnow"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVubfxEd6ALNhtX3qnow" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVurfxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVu7fxEd6ALNhtX3qnow"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="filesystem.ecore#//File"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OlqVsbfxEd6ALNhtX3qnow" x="270" y="270"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_OlqVvLfxEd6ALNhtX3qnow" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OlqVvrfxEd6ALNhtX3qnow" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVv7fxEd6ALNhtX3qnow" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVwLfxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVwbfxEd6ALNhtX3qnow"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVwrfxEd6ALNhtX3qnow" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVw7fxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVxLfxEd6ALNhtX3qnow"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVxbfxEd6ALNhtX3qnow" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVxrfxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVx7fxEd6ALNhtX3qnow"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="filesystem.ecore#//Filesystem"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OlqVvbfxEd6ALNhtX3qnow" x="265" y="55"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_OlqVyLfxEd6ALNhtX3qnow" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OlqVyrfxEd6ALNhtX3qnow" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVy7fxEd6ALNhtX3qnow" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVzLfxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqVzbfxEd6ALNhtX3qnow"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqVzrfxEd6ALNhtX3qnow" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqVz7fxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqV0LfxEd6ALNhtX3qnow"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_OlqV0bfxEd6ALNhtX3qnow" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OlqV0rfxEd6ALNhtX3qnow"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OlqV07fxEd6ALNhtX3qnow"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="filesystem.ecore#//Folder"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OlqVybfxEd6ALNhtX3qnow" x="30" y="140"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Je4pIbfxEd6ALNhtX3qnow"/>
+  <element xmi:type="ecore:EPackage" href="filesystem.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_Omjtl7fxEd6ALNhtX3qnow" type="4002" source="_OlqVyLfxEd6ALNhtX3qnow" target="_OlqVyLfxEd6ALNhtX3qnow">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OmjtmrfxEd6ALNhtX3qnow" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Omjtm7fxEd6ALNhtX3qnow" x="2" y="22"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_OmjtnLfxEd6ALNhtX3qnow" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_OmjtnbfxEd6ALNhtX3qnow" x="1" y="16"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_OmjtmLfxEd6ALNhtX3qnow"/>
+    <element xmi:type="ecore:EReference" href="filesystem.ecore#//Folder/folders"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OmjtmbfxEd6ALNhtX3qnow" points="[-1, 0, -29, -1]$[-26, 12, -54, 11]$[-26, 52, -54, 51]$[9, 52, -19, 51]$[17, 31, -11, 30]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Q2gW8LfxEd6ALNhtX3qnow" id="(0.01694915254237288,0.4745762711864407)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_OmjtnrfxEd6ALNhtX3qnow" type="4002" source="_OlqVyLfxEd6ALNhtX3qnow" target="_OlqVsLfxEd6ALNhtX3qnow">
+    <children xmi:type="notation:DecorationNode" xmi:id="_OmjtobfxEd6ALNhtX3qnow" type="6001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_OmjtorfxEd6ALNhtX3qnow" x="1" y="12"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_Omjto7fxEd6ALNhtX3qnow" type="6003">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_OmjtpLfxEd6ALNhtX3qnow" x="-5" y="15"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Omjtn7fxEd6ALNhtX3qnow"/>
+    <element xmi:type="ecore:EReference" href="filesystem.ecore#//Folder/files"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_OmjtoLfxEd6ALNhtX3qnow" points="[0, 0, -78, -60]$[78, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_OmtekrfxEd6ALNhtX3qnow" id="(0.8305084745762712,0.9830508474576272)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Omtek7fxEd6ALNhtX3qnow" id="(0.0,0.4915254237288136)"/>
+  </edges>
+</notation:Diagram>

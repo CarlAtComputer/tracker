@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated tracker -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="tracker.presentation.TrackerModelWizardID"
+            name="%_UI_TrackerModelWizard_label"
+            class="tracker.presentation.TrackerModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TrackerModelFile.gif">
+         <description>%_UI_TrackerModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated tracker -->
+      <editor
+            id="tracker.presentation.TrackerEditorID"
+            name="%_UI_TrackerEditor_label"
+            icon="icons/full/obj16/TrackerModelFile.gif"
+            extensions="tracker"
+            class="tracker.presentation.TrackerEditor"
+            contributorClass="tracker.presentation.TrackerActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

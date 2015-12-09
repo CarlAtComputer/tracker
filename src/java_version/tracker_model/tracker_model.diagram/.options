@@ -1,0 +1,7 @@
+# Tracing options for the tracker_model.diagram plug-in
+
+# Common issues
+tracker_model.diagram/debug=false
+
+# Visual IDs
+tracker_model.diagram/debug/visualID=false
