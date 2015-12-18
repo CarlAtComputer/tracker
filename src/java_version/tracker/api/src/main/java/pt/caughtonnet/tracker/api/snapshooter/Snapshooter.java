@@ -5,7 +5,7 @@ package pt.caughtonnet.tracker.api.snapshooter;
 
 import java.util.Date;
 
-import pt.caughtonnet.tracker.api.model.SnapshotResult;
+import pt.caughtonnet.tracker.api.model.Snapshot;
 
 /**
  *
@@ -18,11 +18,11 @@ public interface Snapshooter {
 	 * @param snapshotDate the date in which to perform the shot
 	 * @return The snap shot result
 	 */
-	public SnapshotResult shoot(Date snapshotDate);
+	public Snapshot shoot(Date snapshotDate);
 
 	/**
 	 * Shoots the datasource and returns the snapshot result
 	 * @return The snap shot result
 	 */
-	public SnapshotResult shoot();
+	public Snapshot shoot();
 }

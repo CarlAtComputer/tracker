@@ -15,8 +15,9 @@ import java.util.concurrent.Future;
 
 import pt.caughtonnet.tracker.api.chronos.Chronos;
 import pt.caughtonnet.tracker.api.chronos.ChronosMode;
-import pt.caughtonnet.tracker.api.model.SnapshotResult;
+import pt.caughtonnet.tracker.api.model.Snapshot;
 import pt.caughtonnet.tracker.api.snapshooter.Snapshooter;
+import pt.caughtonnet.tracker.impl.model.DefaultSnapshot;
 
 /**
  * The default chronos
@@ -32,8 +33,8 @@ public class DefaultChronos implements Chronos {
 		}
 	}
 	
-	class ChronosSnapshotTask implements Callable<SnapshotResult> {
-		public SnapshotResult call() throws Exception {
+	class ChronosSnapshotTask implements Callable<Snapshot> {
+		public Snapshot call() throws Exception {
 			return DefaultChronos.this.runChronosSnapshotTask();
 		}
 	} 
@@ -118,7 +119,7 @@ public class DefaultChronos implements Chronos {
 	/**
 	 * Current ordered snapshot tasks 
 	 */
-	protected Map<Date, Future<SnapshotResult>> currentTasks;
+	protected Map<Date, Future<Snapshot>> currentTasks;
 
 
 	/* - - - - - - - - - - - - - - - - *-*-* CONSTRUCTORS *-*-* - - - - - - - - - - - - - - - - - -  */
@@ -257,7 +258,7 @@ public class DefaultChronos implements Chronos {
 	 * @see pt.caughtonnet.tracker.api.chronos.Chronos#getCurrentOrderedTasks()
 	 */
 	@Override
-	public Map<Date, Future<SnapshotResult>> getCurrentOrderedTasks() {
+	public Map<Date, Future<Snapshot>> getCurrentOrderedTasks() {
 		return this.currentTasks;
 	}
 	
@@ -276,7 +277,7 @@ public class DefaultChronos implements Chronos {
 		
 		this.chronosTimer = new Timer();
 		this.chronosRandom = new Random();
-		this.currentTasks = new HashMap<Date, Future<SnapshotResult>>();
+		this.currentTasks = new HashMap<Date, Future<Snapshot>>();
 		executor = Executors.newFixedThreadPool(DEFAULT_CHRONOS_PARALLEL_PROCESS_NUMBER);
 	}
 	
@@ -287,7 +288,7 @@ public class DefaultChronos implements Chronos {
 	protected void runChronosTask() {
 		long deviatedDelay;
 		
-		Future<SnapshotResult> res = executor.submit(new ChronosSnapshotTask());
+		Future<Snapshot> res = executor.submit(new ChronosSnapshotTask());
 		
 		recordTask(currentDate, res);
 		
@@ -301,7 +302,7 @@ public class DefaultChronos implements Chronos {
 	 * Snapshot task
 	 * @return The snapshot result
 	 */
-	public SnapshotResult runChronosSnapshotTask() {
+	public Snapshot runChronosSnapshotTask() {
 		try {
 			if (ChronosMode.LIVE.equals(getChronosMode())) {
 				return chronosSnapshooter.shoot();
@@ -310,7 +311,7 @@ public class DefaultChronos implements Chronos {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-			return SnapshotResult.NOK;
+			return DefaultSnapshot.NOK;
 		}
 	}
 	
@@ -319,13 +320,13 @@ public class DefaultChronos implements Chronos {
 	 * @param taskDate task date
 	 * @param taskFutureResult task future result
 	 */
-	protected void recordTask(Date taskDate, Future<SnapshotResult> taskFutureResult) {
+	protected void recordTask(Date taskDate, Future<Snapshot> taskFutureResult) {
 		/* DEBUG STUFF */
 		double ratio;
 		int done;
 		if (!currentTasks.isEmpty()) {
 			done = 0;
-			for (Entry<Date, Future<SnapshotResult>> entries : currentTasks.entrySet()) {
+			for (Entry<Date, Future<Snapshot>> entries : currentTasks.entrySet()) {
 				if (entries.getValue().isDone()) {
 					done++;
 				}

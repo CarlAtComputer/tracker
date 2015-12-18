@@ -2,6 +2,7 @@ package diagram.test.one.graphical;
 
 import java.util.List;
 
+import org.eclipse.draw2d.AbstractConnectionAnchor;
 import org.eclipse.draw2d.ChopboxAnchor;
 import org.eclipse.draw2d.ConnectionAnchor;
 import org.eclipse.draw2d.Figure;
@@ -11,7 +12,9 @@ import org.eclipse.draw2d.ImageFigure;
 import org.eclipse.draw2d.Label;
 import org.eclipse.draw2d.LineBorder;
 import org.eclipse.draw2d.Panel;
+import org.eclipse.draw2d.XYAnchor;
 import org.eclipse.draw2d.XYLayout;
+import org.eclipse.draw2d.geometry.Point;
 import org.eclipse.draw2d.geometry.Rectangle;
 import org.eclipse.gef.ConnectionEditPart;
 import org.eclipse.gef.NodeEditPart;
@@ -108,7 +111,7 @@ public class FileEditPart extends AbstractGraphicalEditPart implements NodeEditP
 	}
 
 	private ConnectionAnchor getConnectionAnchor() {
-		return new ChopboxAnchor(getFigure());
+		return new ChopboxAnchor(figure);
 	}
 	
 	@Override

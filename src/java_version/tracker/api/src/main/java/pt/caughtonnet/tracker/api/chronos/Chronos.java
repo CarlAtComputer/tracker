@@ -7,7 +7,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import pt.caughtonnet.tracker.api.model.SnapshotResult;
+import pt.caughtonnet.tracker.api.model.Snapshot;
 import pt.caughtonnet.tracker.api.snapshooter.Snapshooter;
 
 /**
@@ -66,5 +66,5 @@ public interface Chronos {
 	 * Gets the current ordered snapshot tasks
 	 * @return The current ordered snapshot tasks
 	 */
-	public Map<Date, Future<SnapshotResult>> getCurrentOrderedTasks();
+	public Map<Date, Future<Snapshot>> getCurrentOrderedTasks();
 }

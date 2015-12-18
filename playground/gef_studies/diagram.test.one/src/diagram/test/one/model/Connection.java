@@ -23,9 +23,4 @@ public class Connection implements Serializable {
 	public void setSource(FileElement source) {
 		this.source = source;
 	}
-	
-	@Override
-	public boolean equals(Object obj) {
-		return super.equals(obj);
-	}
 }

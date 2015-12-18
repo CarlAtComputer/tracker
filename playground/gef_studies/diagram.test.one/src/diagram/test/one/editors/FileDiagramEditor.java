@@ -8,6 +8,7 @@ import java.util.EventObject;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.gef.DefaultEditDomain;
+import org.eclipse.gef.EditPartViewer;
 import org.eclipse.gef.Request;
 import org.eclipse.gef.dnd.AbstractTransferDropTargetListener;
 import org.eclipse.gef.editparts.ScalableRootEditPart;
@@ -60,10 +61,10 @@ public class FileDiagramEditor extends GraphicalEditorWithFlyoutPalette {
 	public void doSave(IProgressMonitor monitor) {
 		try {
 			saveProject(getEditorInput().getAdapter(Project.class));
+			getCommandStack().markSaveLocation();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		getCommandStack().markSaveLocation();
 	}
 
 	@Override
@@ -73,36 +74,7 @@ public class FileDiagramEditor extends GraphicalEditorWithFlyoutPalette {
 	
 	private void setDropListener() {
 		Transfer transfer = FileTransfer.getInstance();
-		getGraphicalViewer().addDropTargetListener(new AbstractTransferDropTargetListener(getGraphicalViewer(), transfer) {
-			protected void updateTargetRequest() {
-				CreateRequest request = (CreateRequest) getTargetRequest();
-				request.setLocation(getDropLocation());
-			}
-			
-			@Override
-			protected Request createTargetRequest() {
-				CreateRequest request = new CreateRequest();
-				request.setFactory(new CreationFactory() {
-					@Override
-					public Object getObjectType() {
-						return File.class;
-					}
-					
-					@Override
-					public Object getNewObject() {
-						File file = new File(((String[]) getCurrentEvent().data)[0]);
-						return file;
-					}
-				});
-				return request;
-//				return super.createTargetRequest();
-			}
-			
-			@Override
-			public boolean isEnabled(DropTargetEvent event) {
-				return super.isEnabled(event);
-			}
-		});
+		getGraphicalViewer().addDropTargetListener(new DirectoryDropListener(getGraphicalViewer(), transfer));
 	}
 	
 	private Project saveProject(Project project) throws IOException {
