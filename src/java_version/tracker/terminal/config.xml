@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<tracker>
-    <chronos>
-        <instance>pt.caughtonnet.tracker.chronos.DefaultChronos</instance>
-    </chronos>
-    <snapShooter>
-        <instance>pt.caughtonnet.tracker.snapshooter.DefaultSnapShooter</instance>
-    </snapShooter>
-</tracker>

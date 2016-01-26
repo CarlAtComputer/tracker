@@ -1,26 +1,23 @@
-/**
- * 
- */
-package pt.caughtonnet.tracker.terminal.config;
+package pt.caughtonnet.tracker.config;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Map;
+
 
 /**
  * Chronos configuration
  * @author CaughtOnNet
  */
-@XmlRootElement
 public class ChronosConfiguration {
 
 	
 	private String instance;
 	
+	private Map<String, Object> parameters;
+	
 	/**
 	 * Gets the chronos instance
 	 * @return the chronos instance
 	 */
-	@XmlElement
 	public String getInstance() {
 		return instance;
 	}
@@ -32,5 +29,22 @@ public class ChronosConfiguration {
 	 */
 	public void setInstance(String instance) {
 		this.instance = instance;
+	}
+	
+	/**
+	 * Gets the parameters
+	 * @return the parameters
+	 */
+	public Map<String, Object> getParameters() {
+		return parameters;
+	}
+	
+	
+	/**
+	 * Sets the parameters
+	 * @param parameters the parameters to set
+	 */
+	public void setParameters(Map<String, Object> parameters) {
+		this.parameters = parameters;
 	}
 }

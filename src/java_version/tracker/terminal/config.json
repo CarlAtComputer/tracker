@@ -1,0 +1,14 @@
+{
+  "chronos": {
+    "instance": "pt.caughtonnet.tracker.chronos.DefaultChronos",
+    "parameters": {
+      "rateDeviation": 0,
+      "parallelProcesses": 10,
+      "rate": 1000,
+      "startDate": "2016-01-26 01:36:27"
+    }
+  },
+  "snapShooter": {
+    "instance": "pt.caughtonnet.tracker.flightradar.snapshooter.FlightRadarSnapShooter"
+  }
+}

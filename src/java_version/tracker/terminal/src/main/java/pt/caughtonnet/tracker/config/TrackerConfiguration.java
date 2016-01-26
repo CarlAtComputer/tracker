@@ -1,24 +1,26 @@
 /**
  * 
  */
-package pt.caughtonnet.tracker.terminal.config;
+package pt.caughtonnet.tracker.config;
 
 import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.Reader;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Marshaller;
-import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 /**
  * Tracker configuration
  * @author CaughtOnNet
  */
-@XmlRootElement(name="tracker")
 public class TrackerConfiguration {
 	
-	private static final String DEFAULT_TRACKER_CONFIGURATION_FILE = "config.xml";
+	private static final String DEFAULT_TRACKER_CONFIGURATION_FILE = "config.json";
+
+
+	public static final String DATE_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
 	
 	private ChronosConfiguration chronos;
@@ -33,7 +35,6 @@ public class TrackerConfiguration {
 	 * Gets the chronos
 	 * @return the chronos
 	 */
-	@XmlElement
 	public ChronosConfiguration getChronos() {
 		return chronos;
 	}
@@ -50,7 +51,6 @@ public class TrackerConfiguration {
 	 * Gets the snapShooter
 	 * @return the snapShooter
 	 */
-	@XmlElement
 	public SnapShooterConfiguration getSnapShooter() {
 		return snapShooter;
 	}
@@ -85,11 +85,15 @@ public class TrackerConfiguration {
 	 * @throws Exception 
 	 */
 	public void save() throws Exception {
-		JAXBContext ctx = JAXBContext.newInstance(TrackerConfiguration.class);
-		Marshaller marsh = ctx.createMarshaller();
-		marsh.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		GsonBuilder builder = new GsonBuilder();
+		builder.setPrettyPrinting().setDateFormat(DATE_FORMAT);
+		Gson gson = builder.create();
 		String saveFileLoc = getTrackerConfigurationFile();
-		marsh.marshal(this, new File(saveFileLoc == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : saveFileLoc));
+		try (FileWriter w = new FileWriter(new File(saveFileLoc == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : saveFileLoc))) {
+			w.write(gson.toJson(this));
+		} catch (Exception e) {
+			throw e;
+		}
 	}
 	
 	/**
@@ -97,9 +101,13 @@ public class TrackerConfiguration {
 	 * @throws Exception 
 	 */
 	public static TrackerConfiguration load() throws Exception {
-		JAXBContext ctx = JAXBContext.newInstance(TrackerConfiguration.class);
-		Unmarshaller unmarsh = ctx.createUnmarshaller();
+		GsonBuilder builder = new GsonBuilder();
+		Gson gson = builder.create();
 		String saveFileLoc = getTrackerConfigurationFile();
-		return (TrackerConfiguration) unmarsh.unmarshal(new File(saveFileLoc == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : saveFileLoc));
+		try (Reader reader = new FileReader(new File(saveFileLoc == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : saveFileLoc))) {
+			return gson.fromJson(reader, TrackerConfiguration.class);
+		} catch (Exception e) {
+			throw e;
+		}
 	}
 }
