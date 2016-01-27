@@ -4,9 +4,8 @@
 package pt.caughtonnet.tracker.terminal;
 
 import pt.caughtonnet.tracker.api.chronos.Chronos;
-import pt.caughtonnet.tracker.api.snapshooter.Snapshooter;
-import pt.caughtonnet.tracker.config.ChronosConfiguration;
-import pt.caughtonnet.tracker.config.SnapShooterConfiguration;
+import pt.caughtonnet.tracker.api.clerk.Clerk;
+import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
 import pt.caughtonnet.tracker.config.TrackerConfiguration;
 
 /**
@@ -15,7 +14,11 @@ import pt.caughtonnet.tracker.config.TrackerConfiguration;
 public class Terminal {
 
 	public static void main(String[] args) throws Exception {
-		Chronos<?> chronos = TrackerFactory.createChronos(TrackerConfiguration.load());
+		TrackerConfiguration config = TrackerConfiguration.load();
+		TrackerMailBox mailBox = TrackerFactory.createMailBox(config);
+		Chronos<?> chronos = TrackerFactory.createChronos(mailBox, config);
 		chronos.start();
+		Clerk<?> clerk = TrackerFactory.createClerk(mailBox, config);
+		clerk.start();
 	}
 }

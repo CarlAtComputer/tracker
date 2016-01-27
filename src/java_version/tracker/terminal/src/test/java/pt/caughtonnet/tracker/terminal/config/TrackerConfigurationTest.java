@@ -8,6 +8,9 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import pt.caughtonnet.tracker.config.ChronosConfiguration;
+import pt.caughtonnet.tracker.config.ClerkConfiguration;
+import pt.caughtonnet.tracker.config.ClerkCourierConfiguration;
+import pt.caughtonnet.tracker.config.MailBoxConfiguration;
 import pt.caughtonnet.tracker.config.SnapShooterConfiguration;
 import pt.caughtonnet.tracker.config.TrackerConfiguration;
 
@@ -34,6 +37,18 @@ public class TrackerConfigurationTest {
 		snapShooterConfig.setInstance("pt.caughtonnet.tracker.flightradar.snapshooter.FlightRadarSnapShooter");
 		config.setSnapShooter(snapShooterConfig);
 		
+		config.setMailbox(new MailBoxConfiguration());
+		config.getMailbox().setInstance("pt.caughtonnet.tracker.impl.mailbox.DefaultMailBox");
+		
+		config.setClerk(new ClerkConfiguration());
+		config.getClerk().setInstance("pt.caughtonnet.tracker.clerk.DefaultClerk");
+		Map<String, Object> defaultClerkParameters = new HashMap<String, Object>();
+		defaultClerkParameters.put("rate", 10l);
+		defaultClerkParameters.put("rateDeviation", 0l);
+		defaultClerkParameters.put("parallelProcesses", 10);
+		config.getClerk().setParameters(defaultClerkParameters);
+		config.getClerk().setCourier(new ClerkCourierConfiguration());
+		config.getClerk().getCourier().setInstance("pt.caughtonnet.tracker.clerk.DefaultCourier");
 		config.save();
 	}
 	

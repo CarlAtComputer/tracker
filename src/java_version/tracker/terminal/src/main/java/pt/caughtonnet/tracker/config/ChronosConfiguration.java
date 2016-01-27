@@ -7,12 +7,10 @@ import java.util.Map;
  * Chronos configuration
  * @author CaughtOnNet
  */
-public class ChronosConfiguration {
+public class ChronosConfiguration extends ParameterConfiguration {
 
 	
 	private String instance;
-	
-	private Map<String, Object> parameters;
 	
 	/**
 	 * Gets the chronos instance
@@ -29,22 +27,5 @@ public class ChronosConfiguration {
 	 */
 	public void setInstance(String instance) {
 		this.instance = instance;
-	}
-	
-	/**
-	 * Gets the parameters
-	 * @return the parameters
-	 */
-	public Map<String, Object> getParameters() {
-		return parameters;
-	}
-	
-	
-	/**
-	 * Sets the parameters
-	 * @param parameters the parameters to set
-	 */
-	public void setParameters(Map<String, Object> parameters) {
-		this.parameters = parameters;
 	}
 }

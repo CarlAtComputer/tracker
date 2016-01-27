@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.Future;
 
 import pt.caughtonnet.tracker.api.exception.chronos.ChronosException;
+import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
 import pt.caughtonnet.tracker.api.model.Snapshot;
 import pt.caughtonnet.tracker.api.snapshooter.Snapshooter;
 
@@ -50,4 +51,10 @@ public interface Chronos<C> {
 	 * @return The configuration class
 	 */
 	public Class<C> getConfigurationBean();
+
+	/**
+	 * Sets the mailbox
+	 * @param mailBox The mailbox
+	 */
+	public void setMailBox(TrackerMailBox mailBox);
 }

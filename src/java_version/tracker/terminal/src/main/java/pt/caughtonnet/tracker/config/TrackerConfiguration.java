@@ -25,9 +25,11 @@ public class TrackerConfiguration {
 	
 	private ChronosConfiguration chronos;
 	
-	
 	private SnapShooterConfiguration snapShooter;
 	
+	private ClerkConfiguration clerk;
+	
+	private MailBoxConfiguration mailbox;
 	
 	private static String trackerConfigurationFile;
 	
@@ -64,13 +66,44 @@ public class TrackerConfiguration {
 	}
 	
 	/**
+	 * Gets the clerk
+	 * @return the clerk
+	 */
+	public ClerkConfiguration getClerk() {
+		return clerk;
+	}
+	
+	/**
+	 * Sets the clerk
+	 * @param clerk the clerk to set
+	 */
+	public void setClerk(ClerkConfiguration clerk) {
+		this.clerk = clerk;
+	}
+	
+	/**
+	 * Gets the mailbox
+	 * @return the mailbox
+	 */
+	public MailBoxConfiguration getMailbox() {
+		return mailbox;
+	}
+	
+	/**
+	 * Sets the mailbox
+	 * @param mailbox the mailbox to set
+	 */
+	public void setMailbox(MailBoxConfiguration mailbox) {
+		this.mailbox = mailbox;
+	}
+	
+	/**
 	 * Gets the trackerConfigurationFile
 	 * @return the trackerConfigurationFile
 	 */
 	private static String getTrackerConfigurationFile() {
 		return TrackerConfiguration.trackerConfigurationFile;
 	}
-	
 	
 	/**
 	 * Sets the trackerConfigurationFile

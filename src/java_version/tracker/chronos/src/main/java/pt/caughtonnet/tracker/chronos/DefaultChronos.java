@@ -16,6 +16,7 @@ import java.util.concurrent.Future;
 import pt.caughtonnet.tracker.api.chronos.Chronos;
 import pt.caughtonnet.tracker.api.exception.chronos.ChronosException;
 import pt.caughtonnet.tracker.api.exception.snapshooter.SnapshooterException;
+import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
 import pt.caughtonnet.tracker.api.model.Snapshot;
 import pt.caughtonnet.tracker.api.snapshooter.Snapshooter;
 import pt.caughtonnet.tracker.chronos.config.DefaultChronosParameters;
@@ -40,28 +41,7 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 		}
 	}
 
-	class ChronosClerkTask extends TimerTask {
-		public void run() {
-			DefaultChronos.this.runClerkTimeTask();
-		}
-	}
-
 	/* - - - - - - - - - - - - - - - - *-*-* STATICS *-*-* - - - - - - - - - - - - - - - - - */
-
-	/**
-	 * The default chronos default rate
-	 */
-	public static final long DEFAULT_CHRONOS_RATE = 1000l;
-
-	/**
-	 * The default chronos rate deviation
-	 */
-	public static final long DEFAULT_CHRONOS_RATE_DEVIATION = 0l;
-
-	/**
-	 * The default chronos parallel process number
-	 */
-	public static final int DEFAULT_CHRONOS_PARALLEL_PROCESS_NUMBER = 20;
 
 	/* - - - - - - - - - - - - - - - - *-*-* PARAMETERS *-*-* - - - - - - - - - - - - - - - - - */
 
@@ -69,6 +49,11 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	 * Chronos parameters
 	 */
 	private DefaultChronosParameters configuration;
+	
+	/**
+	 * The mailbox
+	 */
+	private TrackerMailBox mailBox;
 	
 	/**
 	 * The the chronos snapshooter
@@ -88,11 +73,6 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	protected Timer chronosTimer;
 
 	/**
-	 * The clerk timer to control the rate of expeditions
-	 */
-	protected Timer clerkTimer;
-
-	/**
 	 * Chronos randomizer for the rate deviation
 	 */
 	protected Random chronosRandom;
@@ -107,13 +87,13 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	 */
 	protected Map<Date, Future<Snapshot>> currentTasks;
 
+
 	/* - - - - - - - - - - - - - - - - *-*-* CONSTRUCTORS *-*-* - - - - - - - - - - - - - - - - - - */
 
 	/**
 	 * The default chronos, will set the defautls
 	 */
 	public DefaultChronos() {
-		setChronosDefaults();
 	}
 
 	/* - - - - - - - - - - - - - - - - *-*-* METHODS *-*-* - - - - - - - - - - - - - - - - - - */
@@ -134,6 +114,22 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	 */
 	public void setConfiguration(DefaultChronosParameters configuration) {
 		this.configuration = configuration;
+	}
+	
+	/**
+	 * Gets the mailBox
+	 * @return the mailBox
+	 */
+	public TrackerMailBox getMailBox() {
+		return mailBox;
+	}
+
+	/* (non-Javadoc)
+	 * @see pt.caughtonnet.tracker.api.chronos.Chronos#setMailBox(pt.caughtonnet.tracker.api.mailbox.TrackerMailBox)
+	 */
+	@Override
+	public void setMailBox(TrackerMailBox mailBox) {
+		this.mailBox = mailBox;
 	}
 
 	/**
@@ -171,7 +167,11 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	@Override
 	public void setup(DefaultChronosParameters configuration) throws ChronosException {
 		try {
-			this.configuration = configuration;
+			setConfiguration(configuration);
+			this.chronosTimer = new Timer();
+			this.chronosRandom = new Random();
+			this.currentTasks = new HashMap<Date, Future<Snapshot>>();
+			this.executor = Executors.newFixedThreadPool(configuration.getParallelProcesses().intValue());
 			chronosSnapshooter.setup();
 		} catch (SnapshooterException e) {
 			throw new ChronosException("An error occurred on the snapshooter setup", e);
@@ -186,7 +186,6 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	public void start() {
 		currentDate = configuration.getStartDate() == null ? new Date() : configuration.getStartDate();
 		chronosTimer.schedule(new ChronosTask(), 0l);
-		clerkTimer.schedule(new ChronosClerkTask(), 0l);
 	}
 
 	/*
@@ -196,7 +195,6 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	@Override
 	public void stop() {
 		chronosTimer.cancel();
-		clerkTimer.cancel();
 	}
 
 	/*
@@ -211,23 +209,6 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	/* - - - - - - - - - - - - - - - - - INTERNAL METHODS - - - - - - - - - - - - - - - - - - */
 
 	/**
-	 * Sets the default chronos defaults
-	 */
-	protected void setChronosDefaults() {
-		setConfiguration(new DefaultChronosParameters());
-//		getConfiguration().setRate(DEFAULT_CHRONOS_RATE);
-//		getConfiguration().setRateDeviation(DEFAULT_CHRONOS_RATE_DEVIATION);
-//		getConfiguration().setParallelProcesses(DEFAULT_CHRONOS_PARALLEL_PROCESS_NUMBER);
-//		getConfiguration().setStartDate(Calendar.getInstance().getTime());
-
-		this.chronosTimer = new Timer();
-		this.clerkTimer = new Timer();
-		this.chronosRandom = new Random();
-		this.currentTasks = new HashMap<Date, Future<Snapshot>>();
-		this.executor = Executors.newFixedThreadPool(DEFAULT_CHRONOS_PARALLEL_PROCESS_NUMBER);
-	}
-
-	/**
 	 * The timer task method for this chronos
 	 * 
 	 * @see java.util.TimerTask#run()
@@ -237,22 +218,12 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 
 		Future<Snapshot> res = executor.submit(new ChronosSnapshotTask());
 
+		getMailBox().queueSnapshoot(res);
 		recordTask(currentDate, res);
 
 		deviatedDelay = getDeviatedDelay(getConfiguration().getRate(), getConfiguration().getRateDeviation());
 		currentDate = new Date(currentDate.getTime() + deviatedDelay);
 		chronosTimer.schedule(new ChronosTask(), deviatedDelay);
-	}
-
-	/**
-	 * The timer task method for this chronos clerk
-	 * 
-	 * @see java.util.TimerTask#run()
-	 */
-	protected void runClerkTimeTask() {
-		long delay = Double.valueOf(Math.random() * 100).longValue();
-		System.out.println("Running clerk" +  delay);
-		clerkTimer.schedule(new ChronosClerkTask(), delay);
 	}
 
 	/**
