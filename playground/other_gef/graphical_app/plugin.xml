@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="graphical_app"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="appName"
+               value="graphical_app">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.splashHandlers">
+      <splashHandler
+            class="graphical_app.splashHandlers.BrowserSplashHandler"
+            id="graphical_app.splashHandlers.browser">
+      </splashHandler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="graphical_app.editor.TrackerGraphicalEditor"
+            default="false"
+            id="graphical_app_explorer.editor"
+            name="name">
+      </editor>
+   </extension>
+
+</plugin>

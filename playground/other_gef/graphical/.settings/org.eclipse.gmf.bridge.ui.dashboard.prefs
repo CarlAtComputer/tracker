@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/graphical/model.genmodel
+gmf_dashboard/domainModel=platform\:/resource/graphical/model/model.ecore
+gmf_dashboard/generationModel=platform\:/resource/graphical/Theirs.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/graphical/My.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/graphical/Theirs.gmfmap
+gmf_dashboard/option_rcp=*
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/graphical/My.gmftool

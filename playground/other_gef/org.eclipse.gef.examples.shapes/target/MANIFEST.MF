@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.gef;bundle-version="[3.5.0,4.0.0)",org.ecl
+ ipse.ui;bundle-version="[3.2.0,4.0.0)",org.eclipse.core.runtime;bundl
+ e-version="[3.2.0,4.0.0)",org.eclipse.core.resources;bundle-version="
+ [3.2.0,4.0.0)",org.eclipse.ui.views;bundle-version="[3.2.0,4.0.0)",or
+ g.eclipse.ui.workbench;bundle-version="[3.2.0,4.0.0)",org.eclipse.ui.
+ ide;bundle-version="[3.2.0,4.0.0)",org.eclipse.jface;bundle-version="
+ [3.2.0,4.0.0)"
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/gef/or
+ g.eclipse.gef.git;path="org.eclipse.gef.examples.shapes";commitId=55a
+ a78114f9cae88e3641db5ecc86c319188745f
+Bundle-Vendor: %Plugin.providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 3.10.0.201507080649
+Bundle-Localization: plugin
+Bundle-Name: %Plugin.name
+Bundle-Activator: org.eclipse.gef.examples.shapes.ShapesPlugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.gef.examples.shapes; singleton:=true
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
+

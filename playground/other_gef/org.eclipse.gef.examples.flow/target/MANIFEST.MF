@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.2.0,4.0.0)
+ ",org.eclipse.core.resources;bundle-version="[3.2.0,4.0.0)",org.eclip
+ se.ui.views;bundle-version="[3.2.0,4.0.0)",org.eclipse.ui.workbench;b
+ undle-version="[3.2.0,4.0.0)",org.eclipse.jface;bundle-version="[3.2.
+ 0,4.0.0)",org.eclipse.ui.ide;bundle-version="[3.2.0,4.0.0)",org.eclip
+ se.gef;bundle-version="[3.5.0,4.0.0)"
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/gef/or
+ g.eclipse.gef.git;path="org.eclipse.gef.examples.flow";commitId=55aa7
+ 8114f9cae88e3641db5ecc86c319188745f
+Bundle-Vendor: %Plugin.providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 3.10.0.201507080649
+Bundle-Name: %Plugin.name
+Bundle-Localization: plugin
+Bundle-Activator: org.eclipse.gef.examples.flow.FlowPlugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.eclipse.gef.examples.flow; singleton:=true
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
+
