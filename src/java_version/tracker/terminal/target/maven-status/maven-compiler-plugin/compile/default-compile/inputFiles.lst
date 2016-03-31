@@ -1,4 +1,9 @@
-/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/terminal/config/ChronosConfiguration.java
-/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/terminal/config/TrackerConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/ClerkConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/TrackerConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/terminal/TrackerFactory.java
 /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/terminal/Terminal.java
-/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/terminal/config/SnapShooterConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/MailBoxConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/ClerkCourierConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/ChronosConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/SnapShooterConfiguration.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/terminal/src/main/java/pt/caughtonnet/tracker/config/ParameterConfiguration.java

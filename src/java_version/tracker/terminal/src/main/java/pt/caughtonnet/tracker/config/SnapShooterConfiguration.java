@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author CaughtOnNet
  */
 @XmlRootElement
-public class SnapShooterConfiguration {
+public class SnapShooterConfiguration extends ParameterConfiguration {
 	
 	private String instance;
 	

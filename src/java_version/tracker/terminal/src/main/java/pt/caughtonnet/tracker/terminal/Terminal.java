@@ -16,9 +16,9 @@ public class Terminal {
 	public static void main(String[] args) throws Exception {
 		TrackerConfiguration config = TrackerConfiguration.load();
 		TrackerMailBox mailBox = TrackerFactory.createMailBox(config);
-		Chronos<?> chronos = TrackerFactory.createChronos(mailBox, config);
+		Chronos chronos = TrackerFactory.createChronos(mailBox, config);
 		chronos.start();
-		Clerk<?> clerk = TrackerFactory.createClerk(mailBox, config);
+		Clerk clerk = TrackerFactory.createClerk(mailBox, config);
 		clerk.start();
 	}
 }

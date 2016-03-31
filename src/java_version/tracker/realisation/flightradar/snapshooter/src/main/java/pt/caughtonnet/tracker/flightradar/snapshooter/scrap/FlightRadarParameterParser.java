@@ -128,7 +128,7 @@ public class FlightRadarParameterParser {
 		String planeId, planeRegistration, planeSquawk, planeType, planeRegName, planeOriginAirportAcr, planeDestAirportAcr, planeFlightNumber, planeCallsign;
 		Double planeLatitude, planeLongitude;
 		Integer planeHeading, planeAltitude, planeSpeed;
-		Map<String, Serializable> attributes;
+		Map<String, Object> attributes;
 		
 		for (String key : keys) {
 			if (
@@ -161,7 +161,7 @@ public class FlightRadarParameterParser {
 				track.setLatitude(planeLatitude);
 				track.setLongitude(planeLongitude);
 				track.setSpeed(planeSpeed.doubleValue());
-				attributes = new HashMap<String, Serializable>();
+				attributes = new HashMap<String, Object>();
 				attributes.put(PLANE_REGISTRATION_KEY, planeRegistration);
 				attributes.put(PLANE_SQUAWK_KEY, planeSquawk);
 				attributes.put(PLANE_TYPE_KEY, planeType);

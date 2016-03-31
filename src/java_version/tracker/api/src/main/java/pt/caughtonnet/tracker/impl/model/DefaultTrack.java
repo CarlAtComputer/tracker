@@ -15,8 +15,8 @@ public class DefaultTrack implements Track {
 	private Double altitude;
 	private Double heading;
 	private Double speed;
-	private Serializable id;
-	private Map<String, Serializable> attributes;
+	private Object id;
+	private Map<String, Object> attributes;
 	
 	/* (non-Javadoc)
 	 * @see pt.caughtonnet.tracker.api.model.Track#getLatitude()
@@ -102,7 +102,7 @@ public class DefaultTrack implements Track {
 	 * @see pt.caughtonnet.tracker.api.model.Track#getId()
 	 */
 	@Override
-	public Serializable getId() {
+	public Object getId() {
 		return id;
 	}
 	
@@ -110,7 +110,7 @@ public class DefaultTrack implements Track {
 	 * Sets the id
 	 * @param id the id to set
 	 */
-	public void setId(Serializable id) {
+	public void setId(Object id) {
 		this.id = id;
 	}
 
@@ -118,7 +118,7 @@ public class DefaultTrack implements Track {
 	 * @see pt.caughtonnet.tracker.api.model.Track#getAttributes()
 	 */
 	@Override
-	public Map<String, Serializable> getAttributes() {
+	public Map<String, Object> getAttributes() {
 		return attributes;
 	}
 	
@@ -126,7 +126,7 @@ public class DefaultTrack implements Track {
 	 * Sets the attributes
 	 * @param attributes the attributes to set
 	 */
-	public void setAttributes(Map<String, Serializable> attributes) {
+	public void setAttributes(Map<String, Object> attributes) {
 		this.attributes = attributes;
 	}
 

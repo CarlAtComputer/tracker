@@ -5,17 +5,19 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
+import pt.caughtonnet.tracker.api.config.ConfigurableElement;
 import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
 import pt.caughtonnet.tracker.api.model.Snapshot;
+import pt.caughtonnet.tracker.impl.mailbox.config.MailBoxConfiguration;
 
 /**
  * @author CaughtOnNet
  */
-public class DefaultMailBox implements TrackerMailBox {
+public class DefaultMailBox extends AbstractMailBox implements ConfigurableElement<MailBoxConfiguration> {
 
 	private Queue<Future<Snapshot>> queue;
 
-	private int capacity;
+	private String name;
 
 	/*
 	 * (non-Javadoc)
@@ -24,7 +26,6 @@ public class DefaultMailBox implements TrackerMailBox {
 	@Override
 	public synchronized boolean queueSnapshoot(Future<Snapshot> snapshoot) {
 		if (capacity == 0 || queue.size() < capacity) {
-			System.out.println("Adding " + queue.size());
 			queue.add(snapshoot);
 			return true;
 		}
@@ -40,7 +41,6 @@ public class DefaultMailBox implements TrackerMailBox {
 		Future<Snapshot> future = queue.peek();
 		if (future != null && future.isDone()) {
 			future = queue.poll();
-			System.out.println("Removing " + queue.size());
 			try {
 				return future.get();
 			} catch (InterruptedException e) {
@@ -54,31 +54,19 @@ public class DefaultMailBox implements TrackerMailBox {
 		return null;
 	}
 
-	/**
-	 * Gets the capacity
-	 * 
-	 * @return the capacity
-	 */
-	public int getCapacity() {
-		return capacity;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * @see pt.caughtonnet.tracker.api.mailbox.TrackerMailBox#setCapacity(int)
-	 */
 	@Override
-	public void setCapacity(int capacity) {
-		this.capacity = capacity;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * @see pt.caughtonnet.tracker.api.mailbox.TrackerMailBox#setup()
-	 */
-	@Override
-	public void setup() {
+	protected void setupMailBox() {
 		queue = new ConcurrentLinkedQueue<Future<Snapshot>>();
+	}
+
+	@Override
+	public Class<MailBoxConfiguration> getConfigurationBean() throws Exception {
+		return MailBoxConfiguration.class;
+	}
+
+	@Override
+	public void configure(MailBoxConfiguration config) throws Exception {
+		this.name = config.getName();
 	}
 
 }

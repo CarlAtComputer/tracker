@@ -3,7 +3,7 @@ package pt.caughtonnet.tracker.config;
 /**
  * @author CaughtOnNet
  */
-public class MailBoxConfiguration {
+public class MailBoxConfiguration extends ParameterConfiguration {
 	private String instance;
 	
 	/**

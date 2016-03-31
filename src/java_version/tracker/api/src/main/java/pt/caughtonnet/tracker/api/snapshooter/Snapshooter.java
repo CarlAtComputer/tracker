@@ -19,7 +19,7 @@ public interface Snapshooter {
 	 * @return True if setup was successful, false otherwise
 	 */
 	public boolean setup() throws SnapshooterException;
-
+	
 	/**
 	 * Snapshooter is successfully configured
 	 * @return True if setup was successful, false otherwise

@@ -31,4 +31,10 @@ public interface TrackerMailBox {
 	 * Sets up the mailbox
 	 */
 	public void setup();
+
+	/**
+	 * Mailbox have been setup already
+	 * @return true if is setup, false otherwise
+	 */
+	public boolean isSetup();
 }

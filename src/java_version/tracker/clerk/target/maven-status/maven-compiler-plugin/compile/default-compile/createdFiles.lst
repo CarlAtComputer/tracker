@@ -1,1 +1,7 @@
-pt/caughtonnet/tracker/clerk/App.class
+pt/caughtonnet/tracker/clerk/DefaultClerk$CourierTask.class
+pt/caughtonnet/tracker/clerk/config/DefaultClerkParameters.class
+pt/caughtonnet/tracker/clerk/DefaultClerk$ClerkTimerTask.class
+pt/caughtonnet/tracker/clerk/DefaultClerk.class
+pt/caughtonnet/tracker/clerk/DefaultClerk$1.class
+pt/caughtonnet/tracker/clerk/PrinterCourier.class
+pt/caughtonnet/tracker/clerk/DefaultClerk$ClerkDecompositionTask.class

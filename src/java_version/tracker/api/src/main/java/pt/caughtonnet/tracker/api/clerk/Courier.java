@@ -11,4 +11,5 @@ import pt.caughtonnet.tracker.api.model.Track;
 public interface Courier {
 	public void dispatch(Track track);
 	public void dispatch(Collection<? extends Track> tracks);
+	public void setup();
 }

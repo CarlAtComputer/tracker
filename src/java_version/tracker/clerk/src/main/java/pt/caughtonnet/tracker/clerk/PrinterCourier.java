@@ -15,7 +15,7 @@ public class PrinterCourier implements Courier {
 	 */
 	@Override
 	public void dispatch(Track track) {
-		System.out.println("dispatching " + track.getId());
+		System.out.println("dispatching " + track.getId() + " " + track.getLongitude() + ", " + track.getLatitude());
 	}
 
 	/* (non-Javadoc)
@@ -28,4 +28,8 @@ public class PrinterCourier implements Courier {
 		}
 	}
 
+	@Override
+	public void setup() {
+		// Do nothing, just testing
+	}
 }

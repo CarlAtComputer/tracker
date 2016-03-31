@@ -14,6 +14,8 @@
 		<module>snapshooter</module>
 		<module>terminal</module>
 		<module>realisation/flightradar/snapshooter</module>
+		<module>realisation/rest/courier</module>
+		<module>server/rest</module>
 	</modules>
 
 	<build>

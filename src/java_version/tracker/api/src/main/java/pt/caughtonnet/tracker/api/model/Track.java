@@ -12,6 +12,6 @@ public interface Track {
 	public Double getAltitude();
 	public Double getHeading();
 	public Double getSpeed();
-	public Serializable getId();
-	public Map<String, Serializable> getAttributes();
+	public Object getId();
+	public Map<String, Object> getAttributes();
 }

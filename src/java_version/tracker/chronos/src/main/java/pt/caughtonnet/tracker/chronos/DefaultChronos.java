@@ -1,6 +1,5 @@
 package pt.caughtonnet.tracker.chronos;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +13,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import pt.caughtonnet.tracker.api.chronos.Chronos;
+import pt.caughtonnet.tracker.api.config.ConfigurableElement;
 import pt.caughtonnet.tracker.api.exception.chronos.ChronosException;
 import pt.caughtonnet.tracker.api.exception.snapshooter.SnapshooterException;
 import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
@@ -27,7 +27,7 @@ import pt.caughtonnet.tracker.impl.model.DefaultSnapshot;
  * 
  * @author CaughtOnNet
  */
-public class DefaultChronos implements Chronos<DefaultChronosParameters> {
+public class DefaultChronos implements Chronos, ConfigurableElement<DefaultChronosParameters> {
 
 	class ChronosTask extends TimerTask {
 		public void run() {
@@ -165,7 +165,7 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	 * @see pt.caughtonnet.tracker.api.chronos.Chronos#setup()
 	 */
 	@Override
-	public void setup(DefaultChronosParameters configuration) throws ChronosException {
+	public void configure(DefaultChronosParameters configuration) throws ChronosException {
 		try {
 			setConfiguration(configuration);
 			this.chronosTimer = new Timer();
@@ -258,7 +258,7 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 				}
 			}
 			ratio = (Integer.valueOf(done).doubleValue() / currentTasks.size());
-			System.out.println("Rate: " + ((1.0 / (getConfiguration().getRate() / 1000.0)) * ratio) + " processed per second (" + (1.0 / (getConfiguration().getRate() / 1000.0)) + ")");
+			//System.out.println("Rate: " + ((1.0 / (getConfiguration().getRate() / 1000.0)) * ratio) + " processed per second (" + (1.0 / (getConfiguration().getRate() / 1000.0)) + ")");
 		}
 		currentTasks.put(taskDate, taskFutureResult);
 	}
@@ -274,6 +274,6 @@ public class DefaultChronos implements Chronos<DefaultChronosParameters> {
 	 */
 	private Long getDeviatedDelay(Double rate, Double rateDeviation) {
 		double rand = chronosRandom.nextDouble();
-		return Double.valueOf(rate - (2 * rateDeviation) + Double.valueOf(rand * rateDeviation).longValue()).longValue();
+		return Double.valueOf(rate - (rateDeviation) + Double.valueOf(2 * rand * rateDeviation).longValue()).longValue();
 	}
 }

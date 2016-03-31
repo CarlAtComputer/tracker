@@ -10,6 +10,7 @@ import java.util.concurrent.Executors;
 
 import pt.caughtonnet.tracker.api.clerk.Clerk;
 import pt.caughtonnet.tracker.api.clerk.Courier;
+import pt.caughtonnet.tracker.api.config.ConfigurableElement;
 import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
 import pt.caughtonnet.tracker.api.model.Snapshot;
 import pt.caughtonnet.tracker.api.model.Track;
@@ -18,7 +19,8 @@ import pt.caughtonnet.tracker.clerk.config.DefaultClerkParameters;
 /**
  * @author CaughtOnNet
  */
-public class DefaultClerk implements Clerk<DefaultClerkParameters> {
+
+public class DefaultClerk implements Clerk, ConfigurableElement<DefaultClerkParameters> {
 	/**
 	 * The mailbox
 	 */
@@ -86,7 +88,6 @@ public class DefaultClerk implements Clerk<DefaultClerkParameters> {
 			if (running) {
 				Track toSend = trackQueue.poll();
 				if (toSend != null) {
-					System.out.println("trackQueue: " + trackQueue.size());
 					getCourier().dispatch(toSend);
 				}
 			}
@@ -180,7 +181,7 @@ public class DefaultClerk implements Clerk<DefaultClerkParameters> {
 	 * @see pt.caughtonnet.tracker.api.clerk.Clerk#setup()
 	 */
 	@Override
-	public void setup(DefaultClerkParameters configuration) {
+	public void configure(DefaultClerkParameters configuration) {
 		this.clerkTimer = new Timer();
 		this.configuration = configuration;
 		this.clerkRandom = new Random();
@@ -224,7 +225,7 @@ public class DefaultClerk implements Clerk<DefaultClerkParameters> {
 	 */
 	private Long getDeviatedDelay(Double rate, Double rateDeviation) {
 		double rand = clerkRandom.nextDouble();
-		long value = Double.valueOf(rate - (2 * rateDeviation) + Double.valueOf(rand * rateDeviation).longValue()).longValue();
+		long value = Double.valueOf(rate - (rateDeviation) + Double.valueOf(2 * rand * rateDeviation).longValue()).longValue();
 		return value < 0l ? 0l : value;
 	}
 

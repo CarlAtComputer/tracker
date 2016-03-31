@@ -5,11 +5,7 @@ import pt.caughtonnet.tracker.api.mailbox.TrackerMailBox;
 /**
  * @author CaughtOnNet
  */
-public interface Clerk<C> {
-	/**
-	 * Setups clerk
-	 */
-	public void setup(C configuration);
+public interface Clerk {
 	
 	/**
 	 * Starts clerk
@@ -32,10 +28,4 @@ public interface Clerk<C> {
 	 * @param courier The courier
 	 */
 	public void setCourier(Courier courier);
-
-	/**
-	 * Get the configuration class
-	 * @return The configuration class
-	 */
-	public Class<C> getConfigurationBean();
 }
