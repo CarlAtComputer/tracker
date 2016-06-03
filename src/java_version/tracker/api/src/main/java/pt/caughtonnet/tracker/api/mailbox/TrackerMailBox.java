@@ -37,4 +37,10 @@ public interface TrackerMailBox {
 	 * @return true if is setup, false otherwise
 	 */
 	public boolean isSetup();
+
+	/**
+	 * Gets the mailbox size
+	 * @return The mailbox size
+	 */
+	public Integer getSize();
 }

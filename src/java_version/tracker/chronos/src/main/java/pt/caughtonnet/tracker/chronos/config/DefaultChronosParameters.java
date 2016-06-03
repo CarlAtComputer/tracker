@@ -26,6 +26,11 @@ public class DefaultChronosParameters {
 	 * The start date
 	 */
 	private Date startDate;
+
+	/**
+	 * The mailbox limit
+	 */
+	private Integer mailBoxLimit;
 	
 	/**
 	 * Gets the rate
@@ -90,4 +95,22 @@ public class DefaultChronosParameters {
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
+
+	/**
+	 * Gets the mailBoxLimit
+	 * @return the mailBoxLimit
+	 */
+	public Integer getMailBoxLimit() {
+		return mailBoxLimit;
+	}
+
+	/**
+	 * Sets the mailBoxLimit
+	 * @param mailBoxLimit the mailBoxLimit to set
+	 */
+	public void setMailBoxLimit(Integer mailBoxLimit) {
+		this.mailBoxLimit = mailBoxLimit;
+	}
+	
+	
 }

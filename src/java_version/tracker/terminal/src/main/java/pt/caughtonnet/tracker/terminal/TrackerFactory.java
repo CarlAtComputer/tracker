@@ -107,6 +107,12 @@ public class TrackerFactory {
 					Object rawValue = params.get(field.getName());
 					if (field.getType().isAssignableFrom(Date.class)) {
 						field.set(obj, new SimpleDateFormat(TrackerConfiguration.DATE_FORMAT).parse(rawValue.toString()));
+					} else if (field.getType().isAssignableFrom(Integer.class)) {
+						if (rawValue instanceof Double) {
+							field.set(obj, field.getType().cast(((Double) rawValue).intValue()));	
+						} else {
+							field.set(obj, field.getType().cast(rawValue));	
+						}
 					} else {
 						field.set(obj, field.getType().cast(rawValue));
 					}

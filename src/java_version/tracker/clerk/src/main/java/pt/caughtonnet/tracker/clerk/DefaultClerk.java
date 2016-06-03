@@ -86,29 +86,17 @@ public class DefaultClerk implements Clerk, ConfigurableElement<DefaultClerkPara
 	public class CourierTask implements Runnable {
 		public void run() {
 			if (running) {
+				Snapshot snapshot;
 				Track toSend = trackQueue.poll();
+				if (toSend == null) {
+					snapshot = getMailBox().takeSnapshot();
+					if (snapshot != null) {
+						trackQueue.addAll(snapshot.getTracks());
+					}
+				}
 				if (toSend != null) {
 					getCourier().dispatch(toSend);
 				}
-			}
-		}
-	}
-
-	/**
-	 * The Clerk Snapshot timer task
-	 * 
-	 * @author CaughtOnNet
-	 */
-	private class ClerkDecompositionTask implements Runnable {
-		@Override
-		public void run() {
-			Snapshot snapshot;
-			while (running) {
-				snapshot = getMailBox().takeSnapshot();
-				if (snapshot != null) {
-					trackQueue.addAll(snapshot.getTracks());
-				}
-
 			}
 		}
 	}
@@ -197,10 +185,6 @@ public class DefaultClerk implements Clerk, ConfigurableElement<DefaultClerkPara
 	public void start() {
 		clerkTimer.schedule(new ClerkTimerTask(), 0);
 		this.running = true;
-
-		// start the infinite thread to decompose snapshots into tracks by order
-		decompositionInfiniteThread = new Thread(new ClerkDecompositionTask());
-		decompositionInfiniteThread.start();
 	}
 
 	/*

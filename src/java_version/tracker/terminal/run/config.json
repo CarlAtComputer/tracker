@@ -2,10 +2,11 @@
   "chronos": {
     "instance": "pt.caughtonnet.tracker.chronos.DefaultChronos",
     "parameters": {
-      "parallelProcesses": 100,
+      "parallelProcesses": 1,
       "rateDeviation": 0,
-      "rate": 50,
-      "startDate": "2016-01-27 01:16:41"
+      "rate": 1000,
+      "startDate": "2016-01-27 01:16:41",
+      "mailBoxLimit": 5000
     }
   },
   "snapShooter": {
@@ -17,15 +18,15 @@
   "clerk": {
     "instance": "pt.caughtonnet.tracker.clerk.DefaultClerk",
     "courier": {
-      "instance": "pt.caughtonnet.tracker.rest.courier.RestCourier",
+      "instance": "pt.caughtonnet.tracker.clerk.PrinterCourier",
       "parameters": {
       	"endpoint": "http://localhost:8080/rest-server/server/track"
       }
     },
     "parameters": {
-      "parallelProcesses": 1000,
+      "parallelProcesses": 1,
       "rateDeviation": 0,
-      "rate": 1
+      "rate": 1000
     }
   },
   "mailbox": {

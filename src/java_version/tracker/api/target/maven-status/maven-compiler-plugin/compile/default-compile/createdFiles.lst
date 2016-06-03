@@ -12,6 +12,7 @@ pt/caughtonnet/tracker/api/exception/snapshooter/SnapshooterException$Snapshoote
 pt/caughtonnet/tracker/api/exception/chronos/ChronosException.class
 pt/caughtonnet/tracker/api/clerk/Clerk.class
 pt/caughtonnet/tracker/api/mailbox/TrackerMailBox.class
+test/AddService.class
 pt/caughtonnet/tracker/api/model/Track.class
 pt/caughtonnet/tracker/api/model/Snapshot.class
 pt/caughtonnet/tracker/impl/model/DefaultSnapshot.class

@@ -9,6 +9,7 @@
 /home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/pt/caughtonnet/tracker/api/exception/snapshooter/SnapshooterException.java
 /home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/pt/caughtonnet/tracker/impl/mailbox/config/MailBoxConfiguration.java
 /home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/pt/caughtonnet/tracker/impl/mailbox/AbstractMailBox.java
+/home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/test/AddService.java
 /home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/pt/caughtonnet/tracker/api/model/Track.java
 /home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/pt/caughtonnet/tracker/api/mailbox/TrackerMailBox.java
 /home/baia/Work/projects/tracker/src/java_version/tracker/api/src/main/java/pt/caughtonnet/tracker/api/clerk/Clerk.java

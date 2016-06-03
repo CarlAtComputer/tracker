@@ -4,9 +4,15 @@
 package pt.caughtonnet.tracker.config;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.Reader;
+import java.net.URL;
+
+import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -16,6 +22,8 @@ import com.google.gson.GsonBuilder;
  * @author CaughtOnNet
  */
 public class TrackerConfiguration {
+
+	final static Logger logger = Logger.getLogger(new Throwable().getStackTrace()[0].getClassName());
 	
 	private static final String DEFAULT_TRACKER_CONFIGURATION_FILE = "config.json";
 
@@ -125,6 +133,7 @@ public class TrackerConfiguration {
 		try (FileWriter w = new FileWriter(new File(saveFileLoc == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : saveFileLoc))) {
 			w.write(gson.toJson(this));
 		} catch (Exception e) {
+			logger.error("An error occurred while saving the configuration", e);
 			throw e;
 		}
 	}
@@ -134,13 +143,35 @@ public class TrackerConfiguration {
 	 * @throws Exception 
 	 */
 	public static TrackerConfiguration load() throws Exception {
+		Reader reader;
 		GsonBuilder builder = new GsonBuilder();
 		Gson gson = builder.create();
-		String saveFileLoc = getTrackerConfigurationFile();
-		try (Reader reader = new FileReader(new File(saveFileLoc == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : saveFileLoc))) {
+		String savedConfigFileLocation = getTrackerConfigurationFile();
+		String configFileLocation = savedConfigFileLocation == null ? DEFAULT_TRACKER_CONFIGURATION_FILE : savedConfigFileLocation;
+		
+		File configFile = new File(configFileLocation);
+		
+		if (configFile.exists()) {
+			reader = new FileReader(configFile);
+		} else {
+			logger.trace("Configuration file not found on disk, trying as a classpath resource");
+			
+			InputStream is = TrackerConfiguration.class.getClassLoader().getResourceAsStream(configFileLocation);
+			if (is == null) {
+				throw new FileNotFoundException(configFile.getAbsolutePath());
+			}
+			
+			reader = new InputStreamReader(is);
+			logger.trace("Configuration file found on classpath: " + configFileLocation);
+		}
+		
+		try {
 			return gson.fromJson(reader, TrackerConfiguration.class);
 		} catch (Exception e) {
+			logger.error("An error occurred while loading the configuration", e);
 			throw e;
+		} finally {
+			reader.close();
 		}
 	}
 }

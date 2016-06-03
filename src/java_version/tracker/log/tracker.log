@@ -1,0 +1,1058 @@
+2016-06-02 23:42:16 ERROR Terminal:22 - error test
+java.io.IOException: test
+	at pt.caughtonnet.tracker.terminal.Terminal.main(Terminal.java:22)
+2016-06-02 23:43:54 TRACE Terminal:23 - Starting Tracker Terminal at6/2/16
+2016-06-02 23:44:16 TRACE Terminal:23 - Starting Tracker Terminal at Thursday, June 2, 2016
+2016-06-02 23:44:29 TRACE Terminal:23 - Starting Tracker Terminal at Jun 2, 2016
+2016-06-02 23:47:31 TRACE Terminal:23 - Starting Tracker Terminal
+2016-06-02 23:47:31 TRACE Terminal:25 - Loading configurations
+2016-06-02 23:47:31 TRACE Terminal:27 - Configurations loaded
+2016-06-02 23:47:31 TRACE Terminal:29 - Creating mail box
+2016-06-02 23:47:31 TRACE Terminal:31 - Mail box created
+2016-06-02 23:47:31 TRACE Terminal:33 - Creating Chronos
+2016-06-02 23:47:31 TRACE Terminal:35 - Chronos created
+2016-06-02 23:47:31 TRACE Terminal:37 - Starting Chronos
+2016-06-02 23:47:31 TRACE Terminal:39 - Chronos started
+2016-06-02 23:47:31 TRACE Terminal:41 - Creating Clerk
+2016-06-02 23:47:32 TRACE Terminal:43 - Clerk created
+2016-06-02 23:47:32 TRACE Terminal:45 - Starting Clerk
+2016-06-02 23:47:32 TRACE Terminal:47 - Clerk started
+2016-06-02 23:49:46 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-02 23:49:46 TRACE Terminal:22 - Loading configurations
+2016-06-02 23:49:46 ERROR TrackerConfiguration:148 - An error occurred while loading the configuration
+java.io.FileNotFoundException: config.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at pt.caughtonnet.tracker.config.TrackerConfiguration.load(TrackerConfiguration.java:145)
+	at pt.caughtonnet.tracker.terminal.Terminal.main(Terminal.java:23)
+2016-06-02 23:51:58 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-02 23:51:58 TRACE Terminal:22 - Loading configurations
+2016-06-02 23:51:58 ERROR TrackerConfiguration:149 - An error occurred while loading the configuration
+java.io.FileNotFoundException: config.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at pt.caughtonnet.tracker.config.TrackerConfiguration.load(TrackerConfiguration.java:146)
+	at pt.caughtonnet.tracker.terminal.Terminal.main(Terminal.java:23)
+2016-06-02 23:52:40 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-02 23:52:40 TRACE Terminal:22 - Loading configurations
+2016-06-02 23:52:40 TRACE Terminal:24 - Configurations loaded
+2016-06-02 23:52:40 TRACE Terminal:26 - Creating mail box
+2016-06-02 23:52:40 TRACE Terminal:28 - Mail box created
+2016-06-02 23:52:40 TRACE Terminal:30 - Creating Chronos
+2016-06-02 23:52:40 TRACE Terminal:32 - Chronos created
+2016-06-02 23:52:40 TRACE Terminal:34 - Starting Chronos
+2016-06-02 23:52:40 TRACE Terminal:36 - Chronos started
+2016-06-02 23:52:40 TRACE Terminal:38 - Creating Clerk
+2016-06-02 23:52:41 TRACE Terminal:40 - Clerk created
+2016-06-02 23:52:41 TRACE Terminal:42 - Starting Clerk
+2016-06-02 23:52:41 TRACE Terminal:44 - Clerk started
+2016-06-02 23:58:08 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-02 23:58:08 TRACE Terminal:22 - Loading configurations
+2016-06-02 23:58:08 TRACE Terminal:24 - Configurations loaded
+2016-06-02 23:58:08 TRACE Terminal:26 - Creating mail box
+2016-06-02 23:58:08 TRACE Terminal:28 - Mail box created
+2016-06-02 23:58:08 TRACE Terminal:30 - Creating Chronos
+2016-06-02 23:58:08 TRACE Terminal:32 - Chronos created
+2016-06-02 23:58:08 TRACE Terminal:34 - Starting Chronos
+2016-06-02 23:58:08 TRACE Terminal:36 - Chronos started
+2016-06-02 23:58:08 TRACE Terminal:38 - Creating Clerk
+2016-06-02 23:58:09 TRACE Terminal:40 - Clerk created
+2016-06-02 23:58:09 TRACE Terminal:42 - Starting Clerk
+2016-06-02 23:58:09 TRACE Terminal:44 - Clerk started
+2016-06-02 23:59:12 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-02 23:59:12 TRACE Terminal:22 - Loading configurations
+2016-06-02 23:59:12 TRACE Terminal:24 - Configurations loaded
+2016-06-02 23:59:12 TRACE Terminal:26 - Creating mail box
+2016-06-02 23:59:12 TRACE Terminal:28 - Mail box created
+2016-06-02 23:59:12 TRACE Terminal:30 - Creating Chronos
+2016-06-02 23:59:12 TRACE Terminal:32 - Chronos created
+2016-06-02 23:59:12 TRACE Terminal:34 - Starting Chronos
+2016-06-02 23:59:12 TRACE Terminal:36 - Chronos started
+2016-06-02 23:59:12 TRACE Terminal:38 - Creating Clerk
+2016-06-02 23:59:12 TRACE Terminal:40 - Clerk created
+2016-06-02 23:59:12 TRACE Terminal:42 - Starting Clerk
+2016-06-02 23:59:12 TRACE Terminal:44 - Clerk started
+2016-06-02 23:59:54 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-02 23:59:54 TRACE Terminal:22 - Loading configurations
+2016-06-02 23:59:54 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-02 23:59:54 TRACE TrackerConfiguration:157 - Configuration file found on classpath
+2016-06-02 23:59:54 ERROR TrackerConfiguration:163 - An error occurred while loading the configuration
+java.io.FileNotFoundException: config.json (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileReader.<init>(FileReader.java:72)
+	at pt.caughtonnet.tracker.config.TrackerConfiguration.load(TrackerConfiguration.java:160)
+	at pt.caughtonnet.tracker.terminal.Terminal.main(Terminal.java:23)
+2016-06-03 00:00:14 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:00:14 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:00:14 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:00:17 TRACE TrackerConfiguration:157 - Configuration file found on classpath
+2016-06-03 00:00:30 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:00:30 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:00:30 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:00:30 TRACE TrackerConfiguration:157 - Configuration file found on classpath
+2016-06-03 00:00:30 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:00:30 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:00:30 TRACE Terminal:28 - Mail box created
+2016-06-03 00:00:30 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:00:30 TRACE Terminal:32 - Chronos created
+2016-06-03 00:00:30 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:00:30 TRACE Terminal:36 - Chronos started
+2016-06-03 00:00:30 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:00:31 TRACE Terminal:40 - Clerk created
+2016-06-03 00:00:31 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:00:31 TRACE Terminal:44 - Clerk started
+2016-06-03 00:00:48 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:00:48 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:00:48 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:00:48 TRACE TrackerConfiguration:157 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/classes/config.json
+2016-06-03 00:00:48 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:00:48 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:00:48 TRACE Terminal:28 - Mail box created
+2016-06-03 00:00:48 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:00:48 TRACE Terminal:32 - Chronos created
+2016-06-03 00:00:48 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:00:48 TRACE Terminal:36 - Chronos started
+2016-06-03 00:00:48 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:00:48 TRACE Terminal:40 - Clerk created
+2016-06-03 00:00:48 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:00:48 TRACE Terminal:44 - Clerk started
+2016-06-03 00:02:00 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:02:00 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:02:00 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:02:00 TRACE TrackerConfiguration:157 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/classes/config.json
+2016-06-03 00:02:00 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:02:00 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:02:00 TRACE Terminal:28 - Mail box created
+2016-06-03 00:02:00 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:02:00 TRACE Terminal:32 - Chronos created
+2016-06-03 00:02:00 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:02:00 TRACE Terminal:36 - Chronos started
+2016-06-03 00:02:00 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:02:00 TRACE Terminal:40 - Clerk created
+2016-06-03 00:02:00 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:02:00 TRACE Terminal:44 - Clerk started
+2016-06-03 00:02:25 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:02:25 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:02:25 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:02:25 TRACE TrackerConfiguration:157 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/classes/config.json
+2016-06-03 00:02:25 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:02:25 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:02:25 TRACE Terminal:28 - Mail box created
+2016-06-03 00:02:25 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:02:25 TRACE Terminal:32 - Chronos created
+2016-06-03 00:02:25 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:02:25 TRACE Terminal:36 - Chronos started
+2016-06-03 00:02:25 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:02:25 TRACE Terminal:40 - Clerk created
+2016-06-03 00:02:25 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:02:25 TRACE Terminal:44 - Clerk started
+2016-06-03 00:13:37 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:13:37 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:13:37 TRACE TrackerConfiguration:151 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:17:00 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:17:00 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:17:00 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:17:00 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/config.json
+2016-06-03 00:17:00 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:17:00 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:17:00 TRACE Terminal:28 - Mail box created
+2016-06-03 00:17:00 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:17:00 TRACE Terminal:32 - Chronos created
+2016-06-03 00:17:00 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:17:00 TRACE Terminal:36 - Chronos started
+2016-06-03 00:17:00 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:17:00 TRACE Terminal:40 - Clerk created
+2016-06-03 00:17:00 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:17:00 TRACE Terminal:44 - Clerk started
+2016-06-03 00:17:32 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:17:32 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:17:32 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:17:32 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:17:32 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:17:32 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:17:32 TRACE Terminal:28 - Mail box created
+2016-06-03 00:17:32 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:19:39 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:19:39 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:19:39 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:19:39 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:19:39 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:19:39 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:19:39 TRACE Terminal:28 - Mail box created
+2016-06-03 00:19:39 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:21:41 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:21:41 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:21:41 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:21:41 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:21:41 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:21:41 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:21:41 TRACE Terminal:28 - Mail box created
+2016-06-03 00:21:41 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:23:36 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:23:36 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:23:36 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:23:36 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:23:36 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:23:36 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:23:36 TRACE Terminal:28 - Mail box created
+2016-06-03 00:23:36 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:26:10 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:26:10 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:26:10 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:26:10 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:26:10 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:26:10 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:26:10 TRACE Terminal:28 - Mail box created
+2016-06-03 00:26:10 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:26:51 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:26:51 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:26:51 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:26:51 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:26:51 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:26:51 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:26:51 TRACE Terminal:28 - Mail box created
+2016-06-03 00:26:51 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:26:58 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:26:58 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:26:58 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:26:58 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:26:58 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:26:58 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:26:58 TRACE Terminal:28 - Mail box created
+2016-06-03 00:26:58 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:27:39 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:27:39 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:27:39 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:27:39 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:27:39 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:27:39 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:27:39 TRACE Terminal:28 - Mail box created
+2016-06-03 00:27:39 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:28:39 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:28:39 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:28:39 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:28:39 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:28:39 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:28:39 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:28:39 TRACE Terminal:28 - Mail box created
+2016-06-03 00:28:39 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:28:48 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:28:48 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:28:48 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:28:48 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:28:48 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:28:48 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:28:48 TRACE Terminal:28 - Mail box created
+2016-06-03 00:28:48 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:29:27 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:29:27 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:29:27 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:29:27 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:29:27 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:29:27 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:29:27 TRACE Terminal:28 - Mail box created
+2016-06-03 00:29:27 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:29:39 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:29:39 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:29:39 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:29:39 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:29:39 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:29:39 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:29:39 TRACE Terminal:28 - Mail box created
+2016-06-03 00:29:39 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:29:50 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:29:50 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:29:50 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:29:50 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:29:50 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:29:50 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:29:50 TRACE Terminal:28 - Mail box created
+2016-06-03 00:29:50 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:30:02 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:30:02 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:30:02 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:30:02 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:30:02 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:30:02 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:30:02 TRACE Terminal:28 - Mail box created
+2016-06-03 00:30:02 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:30:04 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:30:04 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:30:04 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:30:04 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:30:04 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:30:04 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:30:04 TRACE Terminal:28 - Mail box created
+2016-06-03 00:30:04 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:30:21 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:30:21 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:30:21 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:30:21 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:30:21 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:30:21 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:30:21 TRACE Terminal:28 - Mail box created
+2016-06-03 00:30:21 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:30:32 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:30:32 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:30:32 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:30:32 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:30:32 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:30:32 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:30:32 TRACE Terminal:28 - Mail box created
+2016-06-03 00:30:32 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:30:37 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:30:37 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:30:37 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:30:37 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:30:37 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:30:37 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:30:37 TRACE Terminal:28 - Mail box created
+2016-06-03 00:30:37 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:31:15 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:31:15 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:31:16 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:31:16 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:31:16 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:31:16 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:31:16 TRACE Terminal:28 - Mail box created
+2016-06-03 00:31:16 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:31:32 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:31:32 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:31:32 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:31:32 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:31:32 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:31:32 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:31:32 TRACE Terminal:28 - Mail box created
+2016-06-03 00:31:32 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:32:25 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:32:25 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:32:25 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:32:25 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:32:25 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:32:25 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:32:25 TRACE Terminal:28 - Mail box created
+2016-06-03 00:32:25 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:32:49 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:32:49 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:32:49 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:32:49 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:32:49 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:32:49 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:32:49 TRACE Terminal:28 - Mail box created
+2016-06-03 00:32:49 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:33:00 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:33:00 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:33:00 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:33:00 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:33:00 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:33:00 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:33:00 TRACE Terminal:28 - Mail box created
+2016-06-03 00:33:00 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:33:06 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:33:06 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:33:06 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:33:06 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:33:06 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:33:06 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:33:06 TRACE Terminal:28 - Mail box created
+2016-06-03 00:33:06 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:33:13 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:33:13 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:33:13 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:33:13 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:33:13 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:33:13 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:33:13 TRACE Terminal:28 - Mail box created
+2016-06-03 00:33:13 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:33:24 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:33:24 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:33:24 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:33:24 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:33:24 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:33:24 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:33:24 TRACE Terminal:28 - Mail box created
+2016-06-03 00:33:24 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:33:38 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:33:38 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:33:38 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:33:38 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:33:38 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:33:38 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:33:38 TRACE Terminal:28 - Mail box created
+2016-06-03 00:33:38 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:34:06 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:34:06 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:34:07 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:34:07 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:34:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:34:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:34:07 TRACE Terminal:28 - Mail box created
+2016-06-03 00:34:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:43:00 TRACE Terminal:28 - Starting Tracker Terminal
+2016-06-03 00:43:00 TRACE Terminal:30 - Loading configurations
+2016-06-03 00:43:00 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:43:00 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/config.json
+2016-06-03 00:43:00 TRACE Terminal:32 - Configurations loaded
+2016-06-03 00:43:00 TRACE Terminal:34 - Creating mail box
+2016-06-03 00:43:00 TRACE Terminal:36 - Mail box created
+2016-06-03 00:43:00 TRACE Terminal:38 - Creating Chronos
+2016-06-03 00:43:27 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:43:27 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:43:27 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:43:27 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/config.json
+2016-06-03 00:43:27 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:43:27 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:43:27 TRACE Terminal:28 - Mail box created
+2016-06-03 00:43:27 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:44:02 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:44:02 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:44:02 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:44:02 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:44:02 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:44:02 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:44:02 TRACE Terminal:28 - Mail box created
+2016-06-03 00:44:02 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:45:18 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:45:18 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:45:18 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:45:18 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:45:18 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:45:18 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:45:18 TRACE Terminal:28 - Mail box created
+2016-06-03 00:45:18 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:45:18 TRACE Terminal:32 - Chronos created
+2016-06-03 00:45:18 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:45:18 TRACE Terminal:36 - Chronos started
+2016-06-03 00:45:18 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:45:53 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:45:53 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:45:53 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:45:53 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:45:53 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:45:53 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:45:53 TRACE Terminal:28 - Mail box created
+2016-06-03 00:45:53 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:45:53 TRACE Terminal:32 - Chronos created
+2016-06-03 00:45:53 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:45:53 TRACE Terminal:36 - Chronos started
+2016-06-03 00:45:53 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:46:24 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:46:24 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:46:24 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:46:24 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:46:24 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:46:24 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:46:24 TRACE Terminal:28 - Mail box created
+2016-06-03 00:46:24 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:46:24 TRACE Terminal:32 - Chronos created
+2016-06-03 00:46:24 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:46:24 TRACE Terminal:36 - Chronos started
+2016-06-03 00:46:24 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:47:07 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:47:07 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:47:07 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:47:07 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:47:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:47:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:47:07 TRACE Terminal:28 - Mail box created
+2016-06-03 00:47:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:47:07 TRACE Terminal:32 - Chronos created
+2016-06-03 00:47:07 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:47:07 TRACE Terminal:36 - Chronos started
+2016-06-03 00:47:07 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:47:07 TRACE Terminal:40 - Clerk created
+2016-06-03 00:47:07 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:47:07 TRACE Terminal:44 - Clerk started
+2016-06-03 00:47:34 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:47:34 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:47:34 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:47:34 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:47:34 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:47:34 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:47:34 TRACE Terminal:28 - Mail box created
+2016-06-03 00:47:34 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:47:34 TRACE Terminal:32 - Chronos created
+2016-06-03 00:47:34 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:47:34 TRACE Terminal:36 - Chronos started
+2016-06-03 00:47:34 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:47:34 TRACE Terminal:40 - Clerk created
+2016-06-03 00:47:34 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:47:34 TRACE Terminal:44 - Clerk started
+2016-06-03 00:47:43 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:47:43 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:47:43 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:47:43 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:47:43 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:47:43 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:47:43 TRACE Terminal:28 - Mail box created
+2016-06-03 00:47:43 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:47:43 TRACE Terminal:32 - Chronos created
+2016-06-03 00:47:43 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:47:43 TRACE Terminal:36 - Chronos started
+2016-06-03 00:47:43 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:47:43 TRACE Terminal:40 - Clerk created
+2016-06-03 00:47:43 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:47:43 TRACE Terminal:44 - Clerk started
+2016-06-03 00:47:59 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:47:59 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:47:59 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:47:59 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:47:59 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:47:59 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:47:59 TRACE Terminal:28 - Mail box created
+2016-06-03 00:47:59 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:47:59 TRACE Terminal:32 - Chronos created
+2016-06-03 00:47:59 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:47:59 TRACE Terminal:36 - Chronos started
+2016-06-03 00:47:59 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:47:59 TRACE Terminal:40 - Clerk created
+2016-06-03 00:47:59 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:47:59 TRACE Terminal:44 - Clerk started
+2016-06-03 00:48:07 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:48:07 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:48:07 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:48:07 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:48:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:48:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:48:07 TRACE Terminal:28 - Mail box created
+2016-06-03 00:48:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:48:07 TRACE Terminal:32 - Chronos created
+2016-06-03 00:48:07 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:48:07 TRACE Terminal:36 - Chronos started
+2016-06-03 00:48:07 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:48:07 TRACE Terminal:40 - Clerk created
+2016-06-03 00:48:07 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:48:07 TRACE Terminal:44 - Clerk started
+2016-06-03 00:48:16 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:48:16 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:48:16 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:48:16 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:48:16 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:48:16 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:48:16 TRACE Terminal:28 - Mail box created
+2016-06-03 00:48:16 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:48:16 TRACE Terminal:32 - Chronos created
+2016-06-03 00:48:16 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:48:16 TRACE Terminal:36 - Chronos started
+2016-06-03 00:48:16 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:48:17 TRACE Terminal:40 - Clerk created
+2016-06-03 00:48:17 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:48:17 TRACE Terminal:44 - Clerk started
+2016-06-03 00:49:39 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:49:39 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:49:39 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:49:39 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:49:39 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:49:39 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:49:39 TRACE Terminal:28 - Mail box created
+2016-06-03 00:49:39 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:49:39 TRACE Terminal:32 - Chronos created
+2016-06-03 00:49:39 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:49:39 TRACE Terminal:36 - Chronos started
+2016-06-03 00:49:39 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:49:39 TRACE Terminal:40 - Clerk created
+2016-06-03 00:49:39 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:49:39 TRACE Terminal:44 - Clerk started
+2016-06-03 00:51:38 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:51:38 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:51:38 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:51:38 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:51:38 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:51:38 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:51:38 TRACE Terminal:28 - Mail box created
+2016-06-03 00:51:38 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:52:05 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:52:05 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:52:05 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:52:05 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:52:06 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:52:06 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:52:06 TRACE Terminal:28 - Mail box created
+2016-06-03 00:52:06 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:52:06 TRACE Terminal:32 - Chronos created
+2016-06-03 00:52:06 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:52:06 TRACE Terminal:36 - Chronos started
+2016-06-03 00:52:06 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:52:06 TRACE Terminal:40 - Clerk created
+2016-06-03 00:52:06 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:52:06 TRACE Terminal:44 - Clerk started
+2016-06-03 00:53:05 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:53:05 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:53:05 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:53:05 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:53:05 TRACE Terminal:28 - Mail box created
+2016-06-03 00:53:05 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:53:05 TRACE Terminal:32 - Chronos created
+2016-06-03 00:53:05 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:53:05 TRACE Terminal:36 - Chronos started
+2016-06-03 00:53:05 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:53:05 TRACE Terminal:40 - Clerk created
+2016-06-03 00:53:05 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:53:05 TRACE Terminal:44 - Clerk started
+2016-06-03 00:54:07 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:54:07 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:54:07 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:54:07 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:54:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:54:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:54:07 TRACE Terminal:28 - Mail box created
+2016-06-03 00:54:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:54:07 TRACE Terminal:32 - Chronos created
+2016-06-03 00:54:07 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:54:07 TRACE Terminal:36 - Chronos started
+2016-06-03 00:54:07 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:54:07 TRACE Terminal:40 - Clerk created
+2016-06-03 00:54:07 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:54:07 TRACE Terminal:44 - Clerk started
+2016-06-03 00:54:48 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:54:48 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:54:48 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:54:48 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:54:48 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:54:48 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:54:48 TRACE Terminal:28 - Mail box created
+2016-06-03 00:54:48 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:54:48 TRACE Terminal:32 - Chronos created
+2016-06-03 00:54:48 TRACE Terminal:34 - Starting Chronos
+2016-06-03 00:54:48 TRACE Terminal:36 - Chronos started
+2016-06-03 00:54:48 TRACE Terminal:38 - Creating Clerk
+2016-06-03 00:54:48 TRACE Terminal:40 - Clerk created
+2016-06-03 00:54:48 TRACE Terminal:42 - Starting Clerk
+2016-06-03 00:54:48 TRACE Terminal:44 - Clerk started
+2016-06-03 00:55:47 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:55:47 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:55:47 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:56:57 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:56:57 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:56:57 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:57:16 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:57:16 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:57:16 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:57:16 TRACE TrackerConfiguration:165 - Configuration file found on classpath: /home/baia/Work/projects/tracker/src/java_version/tracker/terminal/target/config.json
+2016-06-03 00:57:16 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:57:16 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:57:16 TRACE Terminal:28 - Mail box created
+2016-06-03 00:57:16 TRACE Terminal:30 - Creating Chronos
+2016-06-03 00:59:51 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 00:59:51 TRACE Terminal:22 - Loading configurations
+2016-06-03 00:59:51 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 00:59:51 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 00:59:51 TRACE Terminal:24 - Configurations loaded
+2016-06-03 00:59:51 TRACE Terminal:26 - Creating mail box
+2016-06-03 00:59:51 TRACE Terminal:28 - Mail box created
+2016-06-03 00:59:51 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:00:15 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:00:15 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:00:15 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:00:15 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:00:15 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:00:15 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:00:15 TRACE Terminal:28 - Mail box created
+2016-06-03 01:00:15 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:00:45 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:00:45 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:00:45 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:00:45 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:00:45 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:00:45 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:00:45 TRACE Terminal:28 - Mail box created
+2016-06-03 01:00:45 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:01:04 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:01:04 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:01:04 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:01:04 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:01:04 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:01:04 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:01:04 TRACE Terminal:28 - Mail box created
+2016-06-03 01:01:04 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:01:07 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:01:07 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:01:07 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:01:07 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:01:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:01:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:01:07 TRACE Terminal:28 - Mail box created
+2016-06-03 01:01:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:01:29 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:01:29 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:01:29 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:01:29 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:01:29 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:01:29 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:01:29 TRACE Terminal:28 - Mail box created
+2016-06-03 01:01:29 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:01:40 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:01:40 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:01:40 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:01:46 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:01:46 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:01:46 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:01:46 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:01:46 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:01:46 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:01:46 TRACE Terminal:28 - Mail box created
+2016-06-03 01:01:46 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:02:26 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:02:26 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:02:26 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:02:26 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:02:26 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:02:26 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:02:26 TRACE Terminal:28 - Mail box created
+2016-06-03 01:02:26 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:02:48 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:02:48 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:02:48 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:02:48 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:02:48 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:02:48 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:02:48 TRACE Terminal:28 - Mail box created
+2016-06-03 01:02:48 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:03:02 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:03:02 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:03:02 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:03:02 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:03:02 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:03:02 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:03:02 TRACE Terminal:28 - Mail box created
+2016-06-03 01:03:02 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:03:11 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:03:11 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:03:11 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:03:37 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:03:37 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:03:37 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:03:37 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:03:37 TRACE Terminal:28 - Mail box created
+2016-06-03 01:03:37 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:03:37 TRACE Terminal:32 - Chronos created
+2016-06-03 01:03:37 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:03:37 TRACE Terminal:36 - Chronos started
+2016-06-03 01:03:37 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:03:50 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:03:50 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:03:50 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:03:50 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:03:50 TRACE Terminal:28 - Mail box created
+2016-06-03 01:03:50 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:03:50 TRACE Terminal:32 - Chronos created
+2016-06-03 01:03:50 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:03:50 TRACE Terminal:36 - Chronos started
+2016-06-03 01:03:50 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:04:52 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:04:52 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:04:52 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:04:52 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:04:52 TRACE Terminal:28 - Mail box created
+2016-06-03 01:04:52 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:04:52 TRACE Terminal:32 - Chronos created
+2016-06-03 01:04:52 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:04:52 TRACE Terminal:36 - Chronos started
+2016-06-03 01:04:52 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:04:52 TRACE Terminal:40 - Clerk created
+2016-06-03 01:04:52 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:04:52 TRACE Terminal:44 - Clerk started
+2016-06-03 01:04:56 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:04:56 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:04:56 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:04:56 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:04:56 TRACE Terminal:28 - Mail box created
+2016-06-03 01:04:56 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:04:56 TRACE Terminal:32 - Chronos created
+2016-06-03 01:04:56 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:04:56 TRACE Terminal:36 - Chronos started
+2016-06-03 01:04:56 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:04:56 TRACE Terminal:40 - Clerk created
+2016-06-03 01:04:56 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:04:56 TRACE Terminal:44 - Clerk started
+2016-06-03 01:04:58 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:04:58 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:04:58 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:04:58 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:04:58 TRACE Terminal:28 - Mail box created
+2016-06-03 01:04:58 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:04:58 TRACE Terminal:32 - Chronos created
+2016-06-03 01:04:58 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:04:58 TRACE Terminal:36 - Chronos started
+2016-06-03 01:04:58 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:04:58 TRACE Terminal:40 - Clerk created
+2016-06-03 01:04:58 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:04:58 TRACE Terminal:44 - Clerk started
+2016-06-03 01:05:13 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:05:13 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:05:13 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:05:13 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:05:13 TRACE Terminal:28 - Mail box created
+2016-06-03 01:05:13 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:05:13 TRACE Terminal:32 - Chronos created
+2016-06-03 01:05:13 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:05:13 TRACE Terminal:36 - Chronos started
+2016-06-03 01:05:13 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:05:13 TRACE Terminal:40 - Clerk created
+2016-06-03 01:05:13 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:05:13 TRACE Terminal:44 - Clerk started
+2016-06-03 01:05:28 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:05:28 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:05:29 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:05:29 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:05:29 TRACE Terminal:28 - Mail box created
+2016-06-03 01:05:29 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:05:29 TRACE Terminal:32 - Chronos created
+2016-06-03 01:05:29 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:05:29 TRACE Terminal:36 - Chronos started
+2016-06-03 01:05:29 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:05:29 TRACE Terminal:40 - Clerk created
+2016-06-03 01:05:29 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:05:29 TRACE Terminal:44 - Clerk started
+2016-06-03 01:05:46 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:05:46 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:05:46 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:05:46 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:05:46 TRACE Terminal:28 - Mail box created
+2016-06-03 01:05:46 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:05:46 TRACE Terminal:32 - Chronos created
+2016-06-03 01:05:46 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:05:46 TRACE Terminal:36 - Chronos started
+2016-06-03 01:05:46 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:05:46 TRACE Terminal:40 - Clerk created
+2016-06-03 01:05:46 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:05:46 TRACE Terminal:44 - Clerk started
+2016-06-03 01:06:07 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:06:07 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:06:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:06:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:06:07 TRACE Terminal:28 - Mail box created
+2016-06-03 01:06:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:06:07 TRACE Terminal:32 - Chronos created
+2016-06-03 01:06:07 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:06:07 TRACE Terminal:36 - Chronos started
+2016-06-03 01:06:07 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:06:07 TRACE Terminal:40 - Clerk created
+2016-06-03 01:06:07 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:06:07 TRACE Terminal:44 - Clerk started
+2016-06-03 01:06:56 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:06:56 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:06:56 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:06:56 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:06:56 TRACE Terminal:28 - Mail box created
+2016-06-03 01:06:56 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:06:56 TRACE Terminal:32 - Chronos created
+2016-06-03 01:06:56 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:06:56 TRACE Terminal:36 - Chronos started
+2016-06-03 01:06:56 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:06:56 TRACE Terminal:40 - Clerk created
+2016-06-03 01:06:56 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:06:56 TRACE Terminal:44 - Clerk started
+2016-06-03 01:07:24 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:07:24 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:07:24 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:07:24 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:07:24 TRACE Terminal:28 - Mail box created
+2016-06-03 01:07:24 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:07:24 TRACE Terminal:32 - Chronos created
+2016-06-03 01:07:24 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:07:24 TRACE Terminal:36 - Chronos started
+2016-06-03 01:07:24 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:07:24 TRACE Terminal:40 - Clerk created
+2016-06-03 01:07:24 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:07:24 TRACE Terminal:44 - Clerk started
+2016-06-03 01:09:17 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:09:17 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:09:17 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:09:17 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:09:17 TRACE Terminal:28 - Mail box created
+2016-06-03 01:09:17 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:09:17 TRACE Terminal:32 - Chronos created
+2016-06-03 01:09:17 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:09:17 TRACE Terminal:36 - Chronos started
+2016-06-03 01:09:17 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:09:17 TRACE Terminal:40 - Clerk created
+2016-06-03 01:09:17 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:09:17 TRACE Terminal:44 - Clerk started
+2016-06-03 01:09:24 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:09:24 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:09:24 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:09:43 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:09:43 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:09:43 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:10:07 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:10:07 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:10:07 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:10:07 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:10:07 TRACE Terminal:28 - Mail box created
+2016-06-03 01:10:07 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:10:07 TRACE Terminal:32 - Chronos created
+2016-06-03 01:10:07 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:10:07 TRACE Terminal:36 - Chronos started
+2016-06-03 01:10:07 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:10:07 TRACE Terminal:40 - Clerk created
+2016-06-03 01:10:07 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:10:07 TRACE Terminal:44 - Clerk started
+2016-06-03 01:10:14 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:10:14 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:10:14 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:10:14 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:10:14 TRACE Terminal:28 - Mail box created
+2016-06-03 01:10:14 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:10:14 TRACE Terminal:32 - Chronos created
+2016-06-03 01:10:14 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:10:14 TRACE Terminal:36 - Chronos started
+2016-06-03 01:10:14 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:10:14 TRACE Terminal:40 - Clerk created
+2016-06-03 01:10:14 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:10:14 TRACE Terminal:44 - Clerk started
+2016-06-03 01:10:26 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:10:26 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:10:26 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:10:26 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:10:26 TRACE Terminal:28 - Mail box created
+2016-06-03 01:10:26 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:10:26 TRACE Terminal:32 - Chronos created
+2016-06-03 01:10:26 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:10:26 TRACE Terminal:36 - Chronos started
+2016-06-03 01:10:26 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:10:26 TRACE Terminal:40 - Clerk created
+2016-06-03 01:10:26 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:10:26 TRACE Terminal:44 - Clerk started
+2016-06-03 01:11:15 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:11:15 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:11:16 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:11:16 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:11:16 TRACE Terminal:28 - Mail box created
+2016-06-03 01:11:16 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:11:16 TRACE Terminal:32 - Chronos created
+2016-06-03 01:11:16 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:11:16 TRACE Terminal:36 - Chronos started
+2016-06-03 01:11:16 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:11:16 TRACE Terminal:40 - Clerk created
+2016-06-03 01:11:16 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:11:16 TRACE Terminal:44 - Clerk started
+2016-06-03 01:11:57 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:11:57 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:11:57 TRACE TrackerConfiguration:157 - Configuration file not found on disk, trying as a classpath resource
+2016-06-03 01:11:57 TRACE TrackerConfiguration:165 - Configuration file found on classpath: config.json
+2016-06-03 01:11:57 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:11:57 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:11:57 TRACE Terminal:28 - Mail box created
+2016-06-03 01:11:57 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:11:57 TRACE Terminal:32 - Chronos created
+2016-06-03 01:11:57 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:11:57 TRACE Terminal:36 - Chronos started
+2016-06-03 01:11:57 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:11:57 TRACE Terminal:40 - Clerk created
+2016-06-03 01:11:57 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:11:57 TRACE Terminal:44 - Clerk started
+2016-06-03 01:12:09 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:12:09 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:12:09 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:12:09 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:12:09 TRACE Terminal:28 - Mail box created
+2016-06-03 01:12:09 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:12:09 TRACE Terminal:32 - Chronos created
+2016-06-03 01:12:09 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:12:09 TRACE Terminal:36 - Chronos started
+2016-06-03 01:12:09 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:12:09 TRACE Terminal:40 - Clerk created
+2016-06-03 01:12:09 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:12:09 TRACE Terminal:44 - Clerk started
+2016-06-03 01:12:21 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:12:21 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:12:21 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:12:21 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:12:21 TRACE Terminal:28 - Mail box created
+2016-06-03 01:12:21 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:12:21 TRACE Terminal:32 - Chronos created
+2016-06-03 01:12:21 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:12:21 TRACE Terminal:36 - Chronos started
+2016-06-03 01:12:21 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:12:21 TRACE Terminal:40 - Clerk created
+2016-06-03 01:12:21 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:12:21 TRACE Terminal:44 - Clerk started
+2016-06-03 01:12:34 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:12:34 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:12:34 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:12:34 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:12:34 TRACE Terminal:28 - Mail box created
+2016-06-03 01:12:34 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:12:34 TRACE Terminal:32 - Chronos created
+2016-06-03 01:12:34 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:12:34 TRACE Terminal:36 - Chronos started
+2016-06-03 01:12:34 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:12:34 TRACE Terminal:40 - Clerk created
+2016-06-03 01:12:34 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:12:34 TRACE Terminal:44 - Clerk started
+2016-06-03 01:13:44 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:13:44 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:13:45 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:13:45 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:13:45 TRACE Terminal:28 - Mail box created
+2016-06-03 01:13:45 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:14:06 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:14:06 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:14:06 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:14:06 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:14:06 TRACE Terminal:28 - Mail box created
+2016-06-03 01:14:06 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:14:21 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:14:21 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:14:21 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:14:21 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:14:21 TRACE Terminal:28 - Mail box created
+2016-06-03 01:14:21 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:14:35 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:14:35 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:14:35 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:14:35 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:14:35 TRACE Terminal:28 - Mail box created
+2016-06-03 01:14:35 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:15:20 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:15:20 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:15:20 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:15:20 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:15:20 TRACE Terminal:28 - Mail box created
+2016-06-03 01:15:20 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:15:20 TRACE Terminal:32 - Chronos created
+2016-06-03 01:15:20 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:15:20 TRACE Terminal:36 - Chronos started
+2016-06-03 01:15:20 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:15:20 TRACE Terminal:40 - Clerk created
+2016-06-03 01:15:20 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:15:20 TRACE Terminal:44 - Clerk started
+2016-06-03 01:15:27 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:15:27 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:15:27 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:15:27 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:15:27 TRACE Terminal:28 - Mail box created
+2016-06-03 01:15:27 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:15:27 TRACE Terminal:32 - Chronos created
+2016-06-03 01:15:27 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:15:27 TRACE Terminal:36 - Chronos started
+2016-06-03 01:15:27 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:15:27 TRACE Terminal:40 - Clerk created
+2016-06-03 01:15:27 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:15:27 TRACE Terminal:44 - Clerk started
+2016-06-03 01:16:09 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:16:09 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:16:09 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:16:09 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:16:09 TRACE Terminal:28 - Mail box created
+2016-06-03 01:16:09 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:16:13 TRACE Terminal:20 - Starting Tracker Terminal
+2016-06-03 01:16:13 TRACE Terminal:22 - Loading configurations
+2016-06-03 01:16:14 TRACE Terminal:24 - Configurations loaded
+2016-06-03 01:16:14 TRACE Terminal:26 - Creating mail box
+2016-06-03 01:16:14 TRACE Terminal:28 - Mail box created
+2016-06-03 01:16:14 TRACE Terminal:30 - Creating Chronos
+2016-06-03 01:16:14 TRACE Terminal:32 - Chronos created
+2016-06-03 01:16:14 TRACE Terminal:34 - Starting Chronos
+2016-06-03 01:16:14 TRACE Terminal:36 - Chronos started
+2016-06-03 01:16:14 TRACE Terminal:38 - Creating Clerk
+2016-06-03 01:16:14 TRACE Terminal:40 - Clerk created
+2016-06-03 01:16:14 TRACE Terminal:42 - Starting Clerk
+2016-06-03 01:16:14 TRACE Terminal:44 - Clerk started

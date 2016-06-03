@@ -15,6 +15,7 @@ public class Dummyshooter extends DefaultSnapShooter {
 
 	@Override
 	public Snapshot shoot(Date snapshotDate) throws SnapshooterException {
+		System.out.println("shooting");
 		DefaultTrack track;
 		List<Track> tracks = new ArrayList<Track>();
 		FlightRadarSnapshot shot = new FlightRadarSnapshot();
@@ -22,6 +23,7 @@ public class Dummyshooter extends DefaultSnapShooter {
 		shot.setSnapDate(snapshotDate);
 		for (int i = 0; i < 1000; i++) {
 			track = new DefaultTrack();
+			track.setId(i);
 			track.setAltitude(1000.0 + i);
 			track.setLatitude(1.0 + i);
 			track.setLongitude(1.0 + i);

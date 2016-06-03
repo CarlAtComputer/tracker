@@ -25,6 +25,7 @@ public class DefaultMailBox extends AbstractMailBox implements ConfigurableEleme
 	 */
 	@Override
 	public synchronized boolean queueSnapshoot(Future<Snapshot> snapshoot) {
+		System.out.println("MAILBOX: Putting");
 		if (capacity == 0 || queue.size() < capacity) {
 			queue.add(snapshoot);
 			return true;
@@ -38,6 +39,7 @@ public class DefaultMailBox extends AbstractMailBox implements ConfigurableEleme
 	 */
 	@Override
 	public synchronized Snapshot takeSnapshot() {
+		System.out.println("MAILBOX: Getting");
 		Future<Snapshot> future = queue.peek();
 		if (future != null && future.isDone()) {
 			future = queue.poll();
@@ -54,19 +56,36 @@ public class DefaultMailBox extends AbstractMailBox implements ConfigurableEleme
 		return null;
 	}
 
+	/* (non-Javadoc)
+	 * @see pt.caughtonnet.tracker.impl.mailbox.AbstractMailBox#setupMailBox()
+	 */
 	@Override
 	protected void setupMailBox() {
 		queue = new ConcurrentLinkedQueue<Future<Snapshot>>();
 	}
 
+	/* (non-Javadoc)
+	 * @see pt.caughtonnet.tracker.api.config.ConfigurableElement#getConfigurationBean()
+	 */
 	@Override
 	public Class<MailBoxConfiguration> getConfigurationBean() throws Exception {
 		return MailBoxConfiguration.class;
 	}
 
+	/* (non-Javadoc)
+	 * @see pt.caughtonnet.tracker.api.config.ConfigurableElement#configure(java.lang.Object)
+	 */
 	@Override
 	public void configure(MailBoxConfiguration config) throws Exception {
 		this.name = config.getName();
+	}
+
+	/* (non-Javadoc)
+	 * @see pt.caughtonnet.tracker.api.mailbox.TrackerMailBox#getSize()
+	 */
+	@Override
+	public Integer getSize() {
+		return queue.size();
 	}
 
 }

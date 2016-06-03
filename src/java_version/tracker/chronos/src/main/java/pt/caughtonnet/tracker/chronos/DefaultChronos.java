@@ -87,6 +87,11 @@ public class DefaultChronos implements Chronos, ConfigurableElement<DefaultChron
 	 */
 	protected Map<Date, Future<Snapshot>> currentTasks;
 
+	/**
+	 * The mailbox limit
+	 */
+	private Integer mailBoxLimit;
+
 
 	/* - - - - - - - - - - - - - - - - *-*-* CONSTRUCTORS *-*-* - - - - - - - - - - - - - - - - - - */
 
@@ -172,6 +177,7 @@ public class DefaultChronos implements Chronos, ConfigurableElement<DefaultChron
 			this.chronosRandom = new Random();
 			this.currentTasks = new HashMap<Date, Future<Snapshot>>();
 			this.executor = Executors.newFixedThreadPool(configuration.getParallelProcesses().intValue());
+			this.mailBoxLimit = configuration.getMailBoxLimit();
 			chronosSnapshooter.setup();
 		} catch (SnapshooterException e) {
 			throw new ChronosException("An error occurred on the snapshooter setup", e);
@@ -215,11 +221,16 @@ public class DefaultChronos implements Chronos, ConfigurableElement<DefaultChron
 	 */
 	protected void runChronosTimeTask() {
 		long deviatedDelay;
-
-		Future<Snapshot> res = executor.submit(new ChronosSnapshotTask());
-
-		getMailBox().queueSnapshoot(res);
-		recordTask(currentDate, res);
+		Future<Snapshot> res;
+		
+		if (getMailBox().getSize() < mailBoxLimit) {
+			res = executor.submit(new ChronosSnapshotTask());
+			getMailBox().queueSnapshoot(res);
+			System.out.println("Mailbox size " + getMailBox().getSize() );
+			//recordTask(currentDate, res);
+		} else {
+			System.out.println("Waiting for a better time to put on mailbox");
+		}
 
 		deviatedDelay = getDeviatedDelay(getConfiguration().getRate(), getConfiguration().getRateDeviation());
 		currentDate = new Date(currentDate.getTime() + deviatedDelay);
