@@ -10,9 +10,12 @@
     }
   },
   "snapShooter": {
-    "instance": "pt.caughtonnet.tracker.snapshooter.Dummyshooter",
+    "instance": "pt.caughtonnet.tracker.roadsim.snapshooter.RoadSimulationSnapShooter",
     "parameters": {
-      	"amountOfTracks": 200
+      	"maxCarAmount": 100,
+      	"maxRoadAmount": 100,
+      	"maxWayAmount": 100,
+      	"shapefileLocation": "C:\teste.shp"
      }
   },
   "clerk": {

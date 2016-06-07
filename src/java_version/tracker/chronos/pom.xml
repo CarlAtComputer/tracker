@@ -9,7 +9,7 @@
 	<artifactId>chronos</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>chronos</name>
+	<name>Tracker Chronos</name>
 
 	<dependencies>
 		<dependency>

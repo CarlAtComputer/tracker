@@ -9,6 +9,6 @@
 	<artifactId>api</artifactId>
 	<packaging>jar</packaging>
 
-	<name>api</name>
+	<name>Tracker Api</name>
 
 </project>

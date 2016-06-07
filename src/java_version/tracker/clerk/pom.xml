@@ -8,7 +8,7 @@
 	<artifactId>clerk</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>clerk</name>
+	<name>Tracker Clerk</name>
 
 
 	<dependencies>

@@ -9,7 +9,7 @@
 	<artifactId>snapshooter</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>snapshooter</name>
+	<name>Tracker Snapshooter</name>
 
 	<dependencies>
 		<dependency>
