@@ -89,7 +89,7 @@ public class DefaultClerk implements Clerk, ConfigurableElement<DefaultClerkPara
 				Snapshot snapshot;
 				Track toSend = trackQueue.poll();
 				if (toSend == null) {
-					snapshot = getMailBox().takeSnapshot();
+					snapshot = getMailBox().retrieveSnapshot();
 					if (snapshot != null) {
 						trackQueue.addAll(snapshot.getTracks());
 					}

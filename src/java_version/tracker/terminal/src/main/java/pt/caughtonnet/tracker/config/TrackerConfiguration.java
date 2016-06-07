@@ -10,9 +10,9 @@ import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
-import java.net.URL;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -23,7 +23,7 @@ import com.google.gson.GsonBuilder;
  */
 public class TrackerConfiguration {
 
-	final static Logger logger = Logger.getLogger(new Throwable().getStackTrace()[0].getClassName());
+	final static Logger logger = LoggerFactory.getLogger(new Throwable().getStackTrace()[0].getClassName());
 	
 	private static final String DEFAULT_TRACKER_CONFIGURATION_FILE = "config.json";
 

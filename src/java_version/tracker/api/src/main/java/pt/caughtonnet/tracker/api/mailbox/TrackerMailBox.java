@@ -14,12 +14,18 @@ public interface TrackerMailBox {
 	 * @param snapshoot The snapshot to queue
 	 */
 	public boolean queueSnapshoot(Future<Snapshot> snapshoot);
+
+	/**
+	 * Waits for the top snapshot to be completed and takes it
+	 * @return The top snapshot
+	 */
+	public Snapshot retrieveSnapshot();
 	
 	/**
 	 * Takes the top snapshot
 	 * @return The top snapshot
 	 */
-	public Snapshot takeSnapshot();
+	public Future<Snapshot> takeSnapshot();
 	
 	/**
 	 * Sets the mailbox capacity

@@ -6,27 +6,27 @@
       "rateDeviation": 0,
       "rate": 1000,
       "startDate": "2016-01-27 01:16:41",
-      "mailBoxLimit": 5000
+      "mailBoxLimit": 5
     }
   },
   "snapShooter": {
-    "instance": "pt.caughtonnet.tracker.flightradar.snapshooter.Dummyshooter",
+    "instance": "pt.caughtonnet.tracker.snapshooter.Dummyshooter",
     "parameters": {
-      	"name": "Flight Radar Snapshooter"
+      	"amountOfTracks": 200
      }
   },
   "clerk": {
     "instance": "pt.caughtonnet.tracker.clerk.DefaultClerk",
     "courier": {
-      "instance": "pt.caughtonnet.tracker.clerk.PrinterCourier",
+      "instance": "pt.caughtonnet.tracker.clerk.LogTraceCourier",
       "parameters": {
       	"endpoint": "http://localhost:8080/rest-server/server/track"
       }
     },
     "parameters": {
-      "parallelProcesses": 1,
+      "parallelProcesses": 10,
       "rateDeviation": 0,
-      "rate": 1000
+      "rate": 10
     }
   },
   "mailbox": {
