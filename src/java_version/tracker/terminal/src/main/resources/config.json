@@ -4,7 +4,7 @@
     "parameters": {
       "parallelProcesses": 1,
       "rateDeviation": 0,
-      "rate": 1000,
+      "rate": 10,
       "startDate": "2016-01-27 01:16:41",
       "mailBoxLimit": 5
     }
@@ -12,10 +12,10 @@
   "snapShooter": {
     "instance": "pt.caughtonnet.tracker.roadsim.snapshooter.RoadSimulationSnapShooter",
     "parameters": {
-      	"maxCarAmount": 100,
+      	"maxCarAmount": 1,
       	"maxRoadAmount": 100,
       	"maxWayAmount": 100,
-      	"shapefileLocation": "C:\teste.shp"
+      	"shapefileLocation": "D:/Users/T0153361/Desktop/Todo/geo_test/test/roads.shp"
      }
   },
   "clerk": {

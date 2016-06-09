@@ -41,6 +41,11 @@
 			<artifactId>jersey-media-json-jackson</artifactId>
 			<version>${jersey.client.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.geotools</groupId>
+			<artifactId>gt-shapefile</artifactId>
+			<version>13.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>

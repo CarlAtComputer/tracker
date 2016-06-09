@@ -20,6 +20,15 @@
 			<env key="JAVA_HOME" value="${jdk.path}" />
 		</exec>
 	</target>
+
+	<target name="clean all">
+		<exec executable="${maven.exe}" dir="${basedir}">
+			<arg value="clean" />
+			<arg value="-DskipTests" />
+			<env key="JAVA_HOME" value="${jdk.path}" />
+		</exec>
+	</target>
+	
 	<target name="test">
 		<exec executable="${maven.exe}" dir="${basedir}">
 			<arg value="test" />

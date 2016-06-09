@@ -88,6 +88,7 @@ public class DefaultSnapshot implements Snapshot {
 	 * Gets the okFlag
 	 * @return the okFlag
 	 */
+	@Override
 	public boolean isOkFlag() {
 		return okFlag;
 	}

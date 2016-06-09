@@ -23,8 +23,7 @@ public class LogTraceCourier implements Courier {
 		if (logger.isTraceEnabled())
 			logger.trace("Printer courier is about to dispatch a track");
 		
-		if (logger.isTraceEnabled())
-			logger.trace("Dispatching " + track.getId() + " " + track.getLongitude() + ", " + track.getLatitude());
+		System.out.println("Dispatching " + track.getId() + " " + track.getLongitude() + ", " + track.getLatitude());
 		
 		if (logger.isDebugEnabled())
 			logger.debug("Printer dispatched " + track.getId() + " with attributes " + track.getAttributes().entrySet().stream().parallel().map(i -> i.getKey()).collect(Collectors.joining(", ")));

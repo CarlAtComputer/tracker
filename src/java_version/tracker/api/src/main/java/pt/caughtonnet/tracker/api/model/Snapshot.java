@@ -9,4 +9,5 @@ import java.util.List;
 public interface Snapshot {
 	public Date getSnapDate();
 	public List<Track> getTracks();
+	public boolean isOkFlag();
 }

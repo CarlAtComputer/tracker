@@ -59,6 +59,7 @@ public abstract class DefaultSnapShooter implements Snapshooter {
 	/**
 	 * Snapshooter setup
 	 * @return True if setup was successful, false otherwise
+	 * @throws SnapshooterException 
 	 */
-	protected abstract boolean setupSnapShooter();
+	protected abstract boolean setupSnapShooter() throws SnapshooterException;
 }

@@ -290,7 +290,7 @@ public class DefaultChronos implements Chronos, ConfigurableElement<DefaultChron
 			
 			return chronosSnapshooter.shoot(currentDate);
 		} catch (Exception e) {
-			e.printStackTrace();
+			logger.error(e.getMessage(), e);
 			return DefaultSnapshot.NOK;
 		}
 	}

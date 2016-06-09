@@ -7,7 +7,7 @@ package pt.caughtonnet.tracker.api.exception.snapshooter;
  * Snapshooter Exception
  * @author CaughtOnNet
  */
-public class SnapshooterException extends Exception {
+public class SnapshooterException extends RuntimeException {
 	
 	/**
 	 * Serial serializable number
@@ -30,6 +30,16 @@ public class SnapshooterException extends Exception {
 
 	/**
 	 * Constructor
+	 * @param e 
+	 */
+	public SnapshooterException(String message, SnapshooterExceptionType type, Throwable exception) {
+		super(message, exception);
+		this.type = type;
+	}
+	
+	/**
+	 * Constructor
+	 * @param e 
 	 */
 	public SnapshooterException(String message, SnapshooterExceptionType type) {
 		super(message);
