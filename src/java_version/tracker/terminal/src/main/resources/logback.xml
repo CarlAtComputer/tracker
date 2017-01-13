@@ -7,13 +7,13 @@
 		</encoder>
 	</appender>
 	<appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<File>D:\pessoal\projectos\tracker\repo\src\java_version\tracker\log\tracker.log</File>
+		<File>../log/tracker.log</File>
 		<encoder>
 			<pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n</pattern>
 		</encoder>
 		<rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
 			<maxIndex>10</maxIndex>
-			<FileNamePattern>D:\pessoal\projectos\tracker\repo\src\java_version\tracker\log\tracker.log.%i</FileNamePattern>
+			<FileNamePattern>../log/tracker.log.%i</FileNamePattern>
 		</rollingPolicy>
 		<triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
 			<MaxFileSize>5MB</MaxFileSize>
