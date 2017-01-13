@@ -4,19 +4,13 @@
     "parameters": {
       "parallelProcesses": 1,
       "rateDeviation": 0,
-      "rate": 10,
-      "startDate": "2016-01-27 01:16:41",
+      "rate": 1000,
+      "startDate": "2016-01-27 01:16:21",
       "mailBoxLimit": 5
     }
   },
   "snapShooter": {
-    "instance": "pt.caughtonnet.tracker.roadsim.snapshooter.RoadSimulationSnapShooter",
-    "parameters": {
-      	"maxCarAmount": 1,
-      	"maxRoadAmount": 100,
-      	"maxWayAmount": 100,
-      	"shapefileLocation": "D:/Users/T0153361/Desktop/Todo/geo_test/test/roads.shp"
-     }
+    "instance": "pt.caughtonnet.tracker.flightradar.snapshooter.FlightRadarSnapShooter"
   },
   "clerk": {
     "instance": "pt.caughtonnet.tracker.clerk.DefaultClerk",

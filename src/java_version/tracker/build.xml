@@ -21,6 +21,14 @@
 		</exec>
 	</target>
 
+	<target name="install">
+		<exec executable="${maven.exe}" dir="${basedir}">
+			<arg value="install" />
+			<arg value="-DskipTests" />
+			<env key="JAVA_HOME" value="${jdk.path}" />
+		</exec>
+	</target>
+
 	<target name="clean all">
 		<exec executable="${maven.exe}" dir="${basedir}">
 			<arg value="clean" />
@@ -40,6 +48,14 @@
 		<exec executable="${maven.exe}" dir="${basedir}">
 			<arg value="eclipse:clean" />
 			<arg value="eclipse:eclipse" />
+			<arg value="-Dwtpversion=2.0" />
+			<env key="JAVA_HOME" value="${jdk.path}" />
+		</exec>
+	</target>
+
+	<target name="eclipse clean">
+		<exec executable="${maven.exe}" dir="${basedir}">
+			<arg value="eclipse:clean" />
 			<env key="JAVA_HOME" value="${jdk.path}" />
 		</exec>
 	</target>

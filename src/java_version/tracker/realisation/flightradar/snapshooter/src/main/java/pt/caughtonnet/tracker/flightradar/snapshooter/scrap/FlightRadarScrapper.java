@@ -27,19 +27,23 @@ public class FlightRadarScrapper {
 	private FlightRadarParameterParser parser;
 
 	public boolean config() {
-		Properties props = new Properties();
 		try (InputStream is = ClassLoader.getSystemClassLoader().getResourceAsStream("flight-radar.properties")) {
+			return config(is);
+		} catch (IOException e) {
+			return false;
+		}
+	}
+	public boolean config(InputStream is) {
+		Properties props = new Properties();
+		try {
 			props.load(is);
-
 			this.url = (String) props.get(URL_PROPERTY);
 			this.bounds = (String) props.get(BOUNDS_PROPERTY);
 
 		} catch (IOException e) {
 			return false;
 		}
-		
 		parser = new FlightRadarParameterParser();
-		
 		return true;
 	}
 

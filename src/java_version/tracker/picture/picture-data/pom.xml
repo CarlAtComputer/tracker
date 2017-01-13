@@ -3,20 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>pt.caughtonnet.tracker</groupId>
-		<artifactId>tracker</artifactId>
+		<artifactId>picture</artifactId>
 		<version>1.0-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
 	</parent>
-	<artifactId>chronos</artifactId>
+	<artifactId>picture-data</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
-	<name>Tracker Chronos</name>
 
-	<dependencies>
-		<dependency>
-			<groupId>pt.caughtonnet.tracker</groupId>
-			<artifactId>api</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+	<name>Tracker Picture Data</name>
+
 </project>

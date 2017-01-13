@@ -4,6 +4,7 @@
 		<groupId>pt.caughtonnet.tracker</groupId>
 		<artifactId>tracker</artifactId>
 		<version>1.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>clerk</artifactId>
 	<packaging>jar</packaging>

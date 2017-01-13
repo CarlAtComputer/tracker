@@ -32,7 +32,7 @@ import com.vividsolutions.jts.geom.MultiPolygon;
 public class CreateTestRoads {
 
 	public static void main(String[] args) throws Exception {
-		File shapefile = new File("D:\\Users\\T0153361\\Desktop\\Todo\\geo_test\\test\\roads.shp");
+		File shapefile = new File("/home/baia/Work/projects/tracker/produced/roads.shp");
 		ShapefileDataStoreFactory f = new ShapefileDataStoreFactory();
 		Map<String, Serializable> params = new HashMap<String, Serializable>();
 		params.put(ShapefileDataStoreFactory.URLP.getName(), shapefile.toURI().toURL());
@@ -61,10 +61,10 @@ public class CreateTestRoads {
 			GeometryFactory gf = JTSFactoryFinder.getGeometryFactory();
 			SimpleFeatureBuilder featureBuilder;
 			Coordinate lastCoordinate = new Coordinate(0, 0);
-			for (int i = 0; i < 100; i++) {
+			for (int i = 0; i < 10000; i++) {
 				coordinates = new Coordinate[2];
 				coordinates[0] = new Coordinate(lastCoordinate);
-				coordinates[1] = new Coordinate(lastCoordinate.x + (Math.random() * 0.1), lastCoordinate.y + (Math.random() * 0.1));
+				coordinates[1] = new Coordinate(lastCoordinate.x + (Math.random() * 0.1 - 0.05), lastCoordinate.y + (Math.random() * 0.1 - 0.05));
 				line = gf.createLineString(coordinates);
 				featureBuilder = new SimpleFeatureBuilder(sft);
 				featureBuilder.set("id", i);
